@@ -1,0 +1,4019 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head hexo-theme='https://github.com/volantis-x/hexo-theme-volantis/#6.0.0-alpha.1'>
+  <meta name="generator" content="Hexo 7.3.0">
+  <meta name="Volantis" content="6.0.0-alpha.1">
+  <meta charset="utf-8">
+  <!-- SEO相关 -->
+  
+  <link rel="canonical" href="https://champhoon.xyz/essay/azurlane-z/"/>
+  <!-- 渲染优化 -->
+    <meta http-equiv='x-dns-prefetch-control' content='on' />
+      <link rel='dns-prefetch' href='https://unpkg.com'>
+      <link rel="preconnect" href="https://unpkg.com" crossorigin>
+      <link rel='dns-prefetch' href='https://cdn.bootcdn.net'>
+      <link rel="preconnect" href="https://cdn.bootcdn.net" crossorigin>
+  <meta name="renderer" content="webkit">
+  <meta name="force-rendering" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Content-Security-Policy" content=" default-src 'self' https:; block-all-mixed-content; base-uri 'self' https:; form-action 'self' https:; worker-src 'self' https:; connect-src 'self' https: *; img-src 'self' data: https: *; media-src 'self' https: *; font-src 'self' data: https: *; frame-src 'self' https: *; manifest-src 'self' https: *; child-src https:; script-src 'self' https: 'unsafe-inline' *; style-src 'self' https: 'unsafe-inline' *; ">
+  <meta name="HandheldFriendly" content="True" >
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+  <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
+  <meta content="telephone=no" name="format-detection">
+  <!-- import head_begin begin -->
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-title" content="澄沨的漫游茶记">
+      <link rel="apple-touch-icon" href="https://api.champhoon.xyz/favicon/favicon-main.png">
+      <link rel="shortcut icon" href="https://api.champhoon.xyz/favicon/favicon.ico">
+  <!-- import head_begin end -->
+  <!-- Custom Files headBegin begin-->
+  
+  <!-- Custom Files headBegin end-->
+  <link rel="preload" href="/css/style.css" as="style">
+  <link rel="preload" href="https://unpkg.com/volantis-static@0.0.1660614606622/media/fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="preload" href="https://unpkg.com/volantis-static@0.0.1660614606622/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+
+  <!-- feed -->
+      <link rel="alternate" href="/atom.xml" title="澄沨的漫游茶记" type="application/atom+xml">
+  <!-- 页面元数据 -->
+  <title>碧蓝航线舰娘原型考据「铁血驱逐篇」 - 澄沨的漫游茶记</title>
+  <meta name="keywords" content="ACGN,碧蓝航线,澄沨的漫游茶记,澄沨,博客,Blog">
+  <meta desc name="description" content="此文章由铁血幼儿园指挥官、Z23/46 激推、一篇文章写了一年的我不是二刺螈さん荣誉撰稿。 - 澄沨 - 澄沨的漫游茶记">
+  
+<meta property="og:type" content="article">
+<meta property="og:title" content="碧蓝航线舰娘原型考据「铁血驱逐篇」">
+<meta property="og:url" content="https://champhoon.xyz/essay/azurlane-z/index.html">
+<meta property="og:site_name" content="澄沨的漫游茶记">
+<meta property="og:description" content="此文章由铁血幼儿园指挥官、Z23&#x2F;46 激推、一篇文章写了一年的我不是二刺螈さん荣誉撰稿。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://api.champhoon.xyz/favicon/favicon-main.png">
+<meta property="article:published_time" content="2021-11-25T13:40:30.000Z">
+<meta property="article:modified_time" content="2025-03-05T14:42:27.220Z">
+<meta property="article:author" content="澄沨">
+<meta property="article:tag" content="ACGN">
+<meta property="article:tag" content="碧蓝航线">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://api.champhoon.xyz/favicon/favicon-main.png">
+  <style>
+    /* 首屏样式 */
+    #safearea {
+  display: none;
+}
+:root {
+  --color-site-body: #f4f4f4;
+  --color-site-bg: #f4f4f4;
+  --color-site-inner: #fff;
+  --color-site-footer: #888;
+  --color-card: #fff;
+  --color-text: #666;
+  --color-block: #f6f6f6;
+  --color-inlinecode: #33a6b8;
+  --color-codeblock: rgba(51,166,184,0.2);
+  --color-h1: #0d5661;
+  --color-h2: #0d5661;
+  --color-h3: #0d5661;
+  --color-h4: #0d5661;
+  --color-h5: #0d5661;
+  --color-h6: #0d5661;
+  --color-p: #666;
+  --color-list: #666;
+  --color-list-hl: #0a444d;
+  --color-meta: #888;
+  --color-read-bkg: #e0d8c8;
+  --color-read-post: #f8f1e2;
+  --color-copyright-bkg: #f5f5f5;
+}
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+*::-webkit-scrollbar {
+  height: 4px;
+  width: 4px;
+}
+*::-webkit-scrollbar-track-piece {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background: #0d5661;
+  cursor: pointer;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background: #0089a7;
+}
+html {
+  color: var(--color-text);
+  width: 100%;
+  height: 100%;
+  font-family: "Noto Sans SC", "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Menlo, Monaco, monospace, sans-serif;
+  font-size: 16.5px;
+}
+html >::-webkit-scrollbar {
+  height: 4px;
+  width: 4px;
+}
+html >::-webkit-scrollbar-track-piece {
+  background: transparent;
+}
+html >::-webkit-scrollbar-thumb {
+  background: #0d5661;
+  cursor: pointer;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+}
+html >::-webkit-scrollbar-thumb:hover {
+  background: #0089a7;
+}
+body {
+  background-color: var(--color-site-body);
+  text-rendering: optimizelegibility;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  line-height: 1.6;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+body.modal-active {
+  overflow: hidden;
+}
+@media screen and (max-width: 680px) {
+  body.modal-active {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
+a {
+  color: #33a6b8;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.28s ease;
+  -webkit-transition: all 0.28s ease;
+  -khtml-transition: all 0.28s ease;
+  -moz-transition: all 0.28s ease;
+  -o-transition: all 0.28s ease;
+  -ms-transition: all 0.28s ease;
+}
+a:hover {
+  color: #0089a7;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+ul,
+ol {
+  padding-left: 0;
+}
+ul li,
+ol li {
+  list-style: none;
+}
+header {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: block;
+}
+img {
+  border: 0;
+  background: none;
+  max-width: 100%;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  height: 0;
+  border: 0;
+  border-radius: 1px;
+  -webkit-border-radius: 1px;
+  border-bottom: 1px solid rgba(102,102,102,0.1);
+}
+button,
+input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+button {
+  overflow: visible;
+  text-transform: none;
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+@supports (backdrop-filter: blur(20px)) {
+  .blur {
+    background: rgba(255,255,255,0.9) !important;
+    backdrop-filter: saturate(200%) blur(20px);
+  }
+}
+@supports (backdrop-filter: blur(20px)) {
+  .blur#comments {
+    backdrop-filter: unset;
+  }
+}
+#layoutHelper-comments {
+  margin-bottom: 100px;
+}
+.shadow {
+  box-shadow: 0 1px 2px 0px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 0 1px 2px 0px rgba(0,0,0,0.1);
+}
+.shadow.floatable {
+  transition: all 0.28s ease;
+  -webkit-transition: all 0.28s ease;
+  -khtml-transition: all 0.28s ease;
+  -moz-transition: all 0.28s ease;
+  -o-transition: all 0.28s ease;
+  -ms-transition: all 0.28s ease;
+}
+.shadow.floatable:hover {
+  box-shadow: 0 2px 4px 0px rgba(0,0,0,0.1), 0 4px 8px 0px rgba(0,0,0,0.1), 0 8px 16px 0px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 0 2px 4px 0px rgba(0,0,0,0.1), 0 4px 8px 0px rgba(0,0,0,0.1), 0 8px 16px 0px rgba(0,0,0,0.1);
+}
+#l_cover {
+  min-height: 64px;
+}
+.cover-wrapper {
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  height: 100vh;
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: -ms-flexbox /* TWEENER - IE 10 */;
+  display: -webkit-flex /* NEW - Chrome */;
+  display: flex /* NEW, Spec - Opera 12.1, Firefox 20+ */;
+  display: flex;
+  flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+  -khtml-flex-wrap: nowrap;
+  -moz-flex-wrap: nowrap;
+  -o-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  color: var(--color-site-inner);
+  padding: 0 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: -100px;
+}
+.cover-wrapper .cover-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+}
+.cover-wrapper .cover-bg.lazyload:not(.loaded) {
+  opacity: 0;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+}
+.cover-wrapper .cover-bg.lazyload.loaded {
+  animation-delay: 0s;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  animation-name: fadeIn;
+}
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    filter: blur(12px);
+    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -khtml-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    filter: blur(12px);
+    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -khtml-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+}
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    filter: blur(12px);
+    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -khtml-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    filter: blur(12px);
+    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -khtml-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+}
+.cover-wrapper .cover-body {
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.cover-wrapper#full {
+  height: calc(100vh + 100px);
+  padding-bottom: 100px;
+}
+.cover-wrapper#half {
+  max-height: 640px;
+  min-height: 400px;
+  height: calc(36vh - 64px + 200px);
+}
+.cover-wrapper #scroll-down {
+  width: 100%;
+  height: 64px;
+  position: absolute;
+  bottom: 100px;
+  text-align: center;
+  cursor: pointer;
+}
+.cover-wrapper #scroll-down .scroll-down-effects {
+  color: #fff;
+  font-size: 24px;
+  line-height: 64px;
+  position: absolute;
+  width: 24px;
+  left: calc(50% - 12px);
+  text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+  animation: scroll-down-effect 1.5s infinite;
+  -webkit-animation: scroll-down-effect 1.5s infinite;
+  -khtml-animation: scroll-down-effect 1.5s infinite;
+  -moz-animation: scroll-down-effect 1.5s infinite;
+  -o-animation: scroll-down-effect 1.5s infinite;
+  -ms-animation: scroll-down-effect 1.5s infinite;
+}
+@-moz-keyframes scroll-down-effect {
+  0% {
+    top: 0;
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+  50% {
+    top: -16px;
+    opacity: 0.4;
+    -webkit-opacity: 0.4;
+    -moz-opacity: 0.4;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+}
+@-webkit-keyframes scroll-down-effect {
+  0% {
+    top: 0;
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+  50% {
+    top: -16px;
+    opacity: 0.4;
+    -webkit-opacity: 0.4;
+    -moz-opacity: 0.4;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+}
+@-o-keyframes scroll-down-effect {
+  0% {
+    top: 0;
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+  50% {
+    top: -16px;
+    opacity: 0.4;
+    -webkit-opacity: 0.4;
+    -moz-opacity: 0.4;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+}
+@keyframes scroll-down-effect {
+  0% {
+    top: 0;
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+  50% {
+    top: -16px;
+    opacity: 0.4;
+    -webkit-opacity: 0.4;
+    -moz-opacity: 0.4;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+}
+.cover-wrapper .cover-body {
+  margin-top: 64px;
+  margin-bottom: 100px;
+}
+.cover-wrapper .cover-body,
+.cover-wrapper .cover-body .top,
+.cover-wrapper .cover-body .bottom {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: -ms-flexbox /* TWEENER - IE 10 */;
+  display: -webkit-flex /* NEW - Chrome */;
+  display: flex /* NEW, Spec - Opera 12.1, Firefox 20+ */;
+  display: flex;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  -khtml-justify-content: center;
+  -moz-justify-content: center;
+  -o-justify-content: center;
+  -ms-justify-content: center;
+  max-width: 100%;
+}
+.cover-wrapper .cover-body .bottom {
+  margin-top: 32px;
+}
+.cover-wrapper .cover-body .title {
+  font-family: "Lobster", "Zhi Mang Xing", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Helvetica, monospace;
+  font-size: 3.125rem;
+  line-height: 1.2;
+  text-shadow: 1px 2px 2px rgba(0,0,0,0.5);
+  margin: 2px;
+}
+.cover-wrapper .cover-body .subtitle {
+  font-size: 20.625px;
+  text-shadow: 1px 2px 2px rgba(0,0,0,0.5);
+}
+.cover-wrapper .cover-body .logo {
+  max-height: 120px;
+  max-width: calc(100% - 4 * 16px);
+}
+@media screen and (min-height: 1024px) {
+  .cover-wrapper .cover-body .title {
+    font-size: 3rem;
+  }
+  .cover-wrapper .cover-body .subtitle {
+    font-size: 1.05rem;
+  }
+  .cover-wrapper .cover-body .logo {
+    max-height: 150px;
+  }
+}
+.cover-wrapper .cover-body .m_search {
+  position: relative;
+  max-width: calc(100% - 16px);
+  width: 320px;
+  vertical-align: middle;
+}
+.cover-wrapper .cover-body .m_search .form {
+  position: relative;
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: block;
+  width: 100%;
+}
+.cover-wrapper .cover-body .m_search .icon,
+.cover-wrapper .cover-body .m_search .input {
+  transition: all 0.28s ease;
+  -webkit-transition: all 0.28s ease;
+  -khtml-transition: all 0.28s ease;
+  -moz-transition: all 0.28s ease;
+  -o-transition: all 0.28s ease;
+  -ms-transition: all 0.28s ease;
+}
+.cover-wrapper .cover-body .m_search .icon {
+  position: absolute;
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: block;
+  line-height: 2.5rem;
+  width: 32px;
+  top: 0;
+  left: 5px;
+  color: rgba(102,102,102,0.75);
+}
+.cover-wrapper .cover-body .m_search .input {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: block;
+  height: 2.5rem;
+  width: 100%;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  font-size: 0.875rem;
+  -webkit-appearance: none;
+  padding-left: 36px;
+  border-radius: 1.4rem;
+  -webkit-border-radius: 1.4rem;
+  background: rgba(255,255,255,0.6);
+  backdrop-filter: blur(10px);
+  border: none;
+  color: var(--color-text);
+}
+@media screen and (max-width: 500px) {
+  .cover-wrapper .cover-body .m_search .input {
+    padding-left: 36px;
+  }
+}
+.cover-wrapper .cover-body .m_search .input:hover {
+  background: rgba(255,255,255,0.8);
+}
+.cover-wrapper .cover-body .m_search .input:focus {
+  background: #fff;
+}
+.cover-wrapper .list-h {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: -ms-flexbox /* TWEENER - IE 10 */;
+  display: -webkit-flex /* NEW - Chrome */;
+  display: flex /* NEW, Spec - Opera 12.1, Firefox 20+ */;
+  display: flex;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -khtml-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  align-items: stretch;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+.cover-wrapper .list-h a {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1 0;
+  -ms-flex: 1 0;
+  flex: 1 0;
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: -ms-flexbox /* TWEENER - IE 10 */;
+  display: -webkit-flex /* NEW - Chrome */;
+  display: flex /* NEW, Spec - Opera 12.1, Firefox 20+ */;
+  display: flex;
+  font-weight: 600;
+}
+.cover-wrapper .list-h a img {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: block;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  margin: 4px;
+  min-width: 40px;
+  max-width: 44px;
+}
+@media screen and (max-width: 768px) {
+  .cover-wrapper .list-h a img {
+    min-width: 36px;
+    max-width: 40px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .cover-wrapper .list-h a img {
+    margin: 2px 4px;
+    min-width: 32px;
+    max-width: 36px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .cover-wrapper .list-h a img {
+    min-width: 28px;
+    max-width: 32px;
+  }
+}
+.cover-wrapper {
+  max-width: 100%;
+}
+.cover-wrapper.search .bottom .menu {
+  margin-top: 16px;
+}
+.cover-wrapper.search .bottom .menu .list-h a {
+  white-space: nowrap;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  align-items: baseline;
+  padding: 2px;
+  margin: 4px;
+  color: var(--color-site-inner);
+  opacity: 0.75;
+  -webkit-opacity: 0.75;
+  -moz-opacity: 0.75;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.05);
+  border-bottom: 2px solid transparent;
+}
+.cover-wrapper.search .bottom .menu .list-h a i {
+  margin-right: 4px;
+}
+.cover-wrapper.search .bottom .menu .list-h a p {
+  font-size: 1rem;
+}
+.cover-wrapper.search .bottom .menu .list-h a:hover,
+.cover-wrapper.search .bottom .menu .list-h a.active,
+.cover-wrapper.search .bottom .menu .list-h a:active {
+  opacity: 1;
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  border-bottom: 2px solid var(--color-site-inner);
+}
+.cover-wrapper.dock .menu,
+.cover-wrapper.featured .menu,
+.cover-wrapper.focus .menu {
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+}
+.cover-wrapper.dock .menu .list-h a,
+.cover-wrapper.featured .menu .list-h a,
+.cover-wrapper.focus .menu .list-h a {
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px;
+  line-height: 24px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-bottom: none;
+  text-align: center;
+  align-content: flex-end;
+  color: rgba(102,102,102,0.7);
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 500px) {
+  .cover-wrapper.dock .menu .list-h a,
+  .cover-wrapper.featured .menu .list-h a,
+  .cover-wrapper.focus .menu .list-h a {
+    padding: 12px 8px;
+  }
+}
+.cover-wrapper.dock .menu .list-h a i,
+.cover-wrapper.featured .menu .list-h a i,
+.cover-wrapper.focus .menu .list-h a i {
+  margin: 8px;
+}
+.cover-wrapper.dock .menu .list-h a p,
+.cover-wrapper.featured .menu .list-h a p,
+.cover-wrapper.focus .menu .list-h a p {
+  font-size: 0.875rem;
+}
+.cover-wrapper.dock .menu .list-h a.active,
+.cover-wrapper.featured .menu .list-h a.active,
+.cover-wrapper.focus .menu .list-h a.active {
+  background: var(--color-card);
+  backdrop-filter: none;
+}
+.cover-wrapper.dock .menu .list-h a.active i,
+.cover-wrapper.featured .menu .list-h a.active i,
+.cover-wrapper.focus .menu .list-h a.active i,
+.cover-wrapper.dock .menu .list-h a.active i+p,
+.cover-wrapper.featured .menu .list-h a.active i+p,
+.cover-wrapper.focus .menu .list-h a.active i+p {
+  color: #0d5661;
+}
+.cover-wrapper.dock .menu .list-h a.active img+p,
+.cover-wrapper.featured .menu .list-h a.active img+p,
+.cover-wrapper.focus .menu .list-h a.active img+p {
+  color: var(--color-text);
+}
+.cover-wrapper.dock .menu .list-h a:hover,
+.cover-wrapper.featured .menu .list-h a:hover,
+.cover-wrapper.focus .menu .list-h a:hover {
+  background: var(--color-card);
+}
+.cover-wrapper.dock .top {
+  margin-bottom: 48px;
+}
+.cover-wrapper.dock .menu {
+  background: rgba(255,255,255,0.5);
+  position: absolute;
+  bottom: 0;
+  max-width: 100%;
+}
+.cover-wrapper.dock .menu .list-h {
+  flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+  -khtml-flex-wrap: nowrap;
+  -moz-flex-wrap: nowrap;
+  -o-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  margin: 4px;
+}
+.cover-wrapper.dock .menu .list-h a+a {
+  margin-left: 4px;
+}
+@media screen and (max-width: 500px) {
+  .cover-wrapper.dock .menu .list-h {
+    overflow-x: scroll;
+  }
+  .cover-wrapper.dock .menu .list-h::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+  }
+  .cover-wrapper.dock .menu .list-h::-webkit-scrollbar-track-piece {
+    background: transparent;
+  }
+  .cover-wrapper.dock .menu .list-h::-webkit-scrollbar-thumb {
+    background: #0d5661;
+    cursor: pointer;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+  }
+  .cover-wrapper.dock .menu .list-h::-webkit-scrollbar-thumb:hover {
+    background: #0089a7;
+  }
+}
+@supports (backdrop-filter: blur(20px)) {
+  .cover-wrapper.dock .menu {
+    background: rgba(255,255,255,0.5);
+    backdrop-filter: saturate(200%) blur(20px);
+  }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-mode: 'dark';
+  }
+  :root:not([color-scheme]) {
+    --color-site-body: #121212;
+    --color-read-bkg: #1f1f1f;
+    --color-read-post: #262626;
+    --color-site-bg: #1f1f1f;
+    --color-site-inner: rgba(238,238,238,0.871);
+    --color-site-footer: rgba(170,170,170,0.871);
+    --color-card: #262626;
+    --color-text: rgba(238,238,238,0.871);
+    --color-block: #121212;
+    --color-codeblock: #1f1f1f;
+    --color-inlinecode: #33a6b8;
+    --color-h1: rgba(255,255,255,0.871);
+    --color-h2: rgba(255,255,255,0.871);
+    --color-h3: rgba(255,255,255,0.871);
+    --color-h4: rgba(255,255,255,0.871);
+    --color-h5: rgba(255,255,255,0.871);
+    --color-h6: rgba(255,255,255,0.871);
+    --color-p: rgba(217,217,217,0.871);
+    --color-list: rgba(217,217,217,0.871);
+    --color-list-hl: #3d7780;
+    --color-meta: rgba(191,191,191,0.871);
+    --color-link: rgba(191,191,191,0.871);
+    --color-copyright-bkg: #21252b;
+  }
+  :root:not([color-scheme]) img {
+    filter: brightness(70%) !important;
+  }
+  :root:not([color-scheme]) .blur {
+    background: rgba(31,31,31,0.9) !important;
+  }
+  :root:not([color-scheme]) .white-box.blur {
+    background: rgba(38,38,38,0.9) !important;
+  }
+  :root:not([color-scheme]) .nav-main .u-search-input {
+    background: var(--color-card) !important;
+  }
+  :root:not([color-scheme]) #l_main .article .prev-next>a {
+    background: var(--color-block) !important;
+  }
+  :root:not([color-scheme]) #l_main .article .prev-next>a:hover {
+    background: var(--color-site-bg) !important;
+  }
+  :root:not([color-scheme]) .article blockquote {
+    background: var(--color-block) !important;
+  }
+  :root:not([color-scheme]) .article-title a {
+    color: var(--color-h1) !important;
+  }
+  :root:not([color-scheme]) details>summary {
+    color: var(--color-p) !important;
+    background: var(--color-site-bg) !important;
+  }
+  :root:not([color-scheme]) details {
+    border: 1px solid var(--color-site-bg) !important;
+    background: var(--color-site-bg) !important;
+  }
+  :root:not([color-scheme]) #u-search .modal,
+  :root:not([color-scheme]) #u-search .modal-header,
+  :root:not([color-scheme]) #u-search .modal-body {
+    background: var(--color-card) !important;
+  }
+  :root:not([color-scheme]) #u-search .modal-body .modal-results .result:hover {
+    background: var(--color-block) !important;
+  }
+  :root:not([color-scheme]) .u-search-input:hover {
+    background: var(--color-block) !important;
+  }
+  :root:not([color-scheme]) .u-search-input:focus {
+    background: var(--color-site-body) !important;
+  }
+}
+[color-scheme='dark'] {
+  --color-site-body: #121212;
+  --color-read-bkg: #1f1f1f;
+  --color-read-post: #262626;
+  --color-site-bg: #1f1f1f;
+  --color-site-inner: rgba(238,238,238,0.871);
+  --color-site-footer: rgba(170,170,170,0.871);
+  --color-card: #262626;
+  --color-text: rgba(238,238,238,0.871);
+  --color-block: #121212;
+  --color-codeblock: #1f1f1f;
+  --color-inlinecode: #33a6b8;
+  --color-h1: rgba(255,255,255,0.871);
+  --color-h2: rgba(255,255,255,0.871);
+  --color-h3: rgba(255,255,255,0.871);
+  --color-h4: rgba(255,255,255,0.871);
+  --color-h5: rgba(255,255,255,0.871);
+  --color-h6: rgba(255,255,255,0.871);
+  --color-p: rgba(217,217,217,0.871);
+  --color-list: rgba(217,217,217,0.871);
+  --color-list-hl: #3d7780;
+  --color-meta: rgba(191,191,191,0.871);
+  --color-link: rgba(191,191,191,0.871);
+  --color-copyright-bkg: #21252b;
+}
+[color-scheme='dark'] img {
+  filter: brightness(70%) !important;
+}
+[color-scheme='dark'] .blur {
+  background: rgba(31,31,31,0.9) !important;
+}
+[color-scheme='dark'] .white-box.blur {
+  background: rgba(38,38,38,0.9) !important;
+}
+[color-scheme='dark'] .nav-main .u-search-input {
+  background: var(--color-card) !important;
+}
+[color-scheme='dark'] #l_main .article .prev-next>a {
+  background: var(--color-block) !important;
+}
+[color-scheme='dark'] #l_main .article .prev-next>a:hover {
+  background: var(--color-site-bg) !important;
+}
+[color-scheme='dark'] .article blockquote {
+  background: var(--color-block) !important;
+}
+[color-scheme='dark'] .article-title a {
+  color: var(--color-h1) !important;
+}
+[color-scheme='dark'] details>summary {
+  color: var(--color-p) !important;
+  background: var(--color-site-bg) !important;
+}
+[color-scheme='dark'] details {
+  border: 1px solid var(--color-site-bg) !important;
+  background: var(--color-site-bg) !important;
+}
+[color-scheme='dark'] #u-search .modal,
+[color-scheme='dark'] #u-search .modal-header,
+[color-scheme='dark'] #u-search .modal-body {
+  background: var(--color-card) !important;
+}
+[color-scheme='dark'] #u-search .modal-body .modal-results .result:hover {
+  background: var(--color-block) !important;
+}
+[color-scheme='dark'] .u-search-input:hover {
+  background: var(--color-block) !important;
+}
+[color-scheme='dark'] .u-search-input:focus {
+  background: var(--color-site-body) !important;
+}
+@media screen and (max-width: 500px) {
+  [color-scheme='dark'] .l_header .m_search {
+    background: var(--color-site-bg) !important;
+  }
+}
+@font-face {
+  font-family: 'UbuntuMono';
+  src: url("https://unpkg.com/volantis-static@0.0.1660614606622/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf");
+  font-weight: 'normal';
+  font-style: 'normal';
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Varela Round';
+  src: url("https://unpkg.com/volantis-static@0.0.1660614606622/media/fonts/VarelaRound/VarelaRound-Regular.ttf");
+  font-weight: 'normal';
+  font-style: 'normal';
+  font-display: swap;
+}
+.l_header {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
+  height: 64px;
+  background: var(--color-card);
+  box-shadow: 0 1px 2px 0px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 0 1px 2px 0px rgba(0,0,0,0.1);
+}
+.l_header.auto {
+  transition: opacity 0.4s ease;
+  -webkit-transition: opacity 0.4s ease;
+  -khtml-transition: opacity 0.4s ease;
+  -moz-transition: opacity 0.4s ease;
+  -o-transition: opacity 0.4s ease;
+  -ms-transition: opacity 0.4s ease;
+  visibility: hidden;
+}
+.l_header.auto.show {
+  opacity: 1 !important;
+  -webkit-opacity: 1 !important;
+  -moz-opacity: 1 !important;
+  visibility: visible;
+}
+.l_header .container {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+.l_header #wrapper {
+  height: 100%;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+.l_header #wrapper .nav-main,
+.l_header #wrapper .nav-sub {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: -ms-flexbox /* TWEENER - IE 10 */;
+  display: -webkit-flex /* NEW - Chrome */;
+  display: flex /* NEW, Spec - Opera 12.1, Firefox 20+ */;
+  display: flex;
+  flex-wrap: nowrap;
+  -webkit-flex-wrap: nowrap;
+  -khtml-flex-wrap: nowrap;
+  -moz-flex-wrap: nowrap;
+  -o-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  -khtml-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -o-justify-content: space-between;
+  -ms-justify-content: space-between;
+  align-items: center;
+}
+.l_header #wrapper .nav-main {
+  transition: all 0.28s ease;
+  -webkit-transition: all 0.28s ease;
+  -khtml-transition: all 0.28s ease;
+  -moz-transition: all 0.28s ease;
+  -o-transition: all 0.28s ease;
+  -ms-transition: all 0.28s ease;
+}
+.l_header #wrapper.sub .nav-main {
+  transform: translateY(-64px);
+  -webkit-transform: translateY(-64px);
+  -khtml-transform: translateY(-64px);
+  -moz-transform: translateY(-64px);
+  -o-transform: translateY(-64px);
+  -ms-transform: translateY(-64px);
+}
+.l_header #wrapper .nav-sub {
+  transition: all 0.28s ease;
+  -webkit-transition: all 0.28s ease;
+  -khtml-transition: all 0.28s ease;
+  -moz-transition: all 0.28s ease;
+  -o-transition: all 0.28s ease;
+  -ms-transition: all 0.28s ease;
+  opacity: 0;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+  height: 64px;
+  width: calc(100% - 2 * 16px);
+  position: absolute;
+}
+.l_header #wrapper .nav-sub ::-webkit-scrollbar {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: none;
+}
+@media screen and (min-width: 2048px) {
+  .l_header #wrapper .nav-sub {
+    max-width: 55vw;
+    margin: auto;
+  }
+}
+.l_header #wrapper.sub .nav-sub {
+  opacity: 1;
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+}
+.l_header #wrapper .title {
+  position: relative;
+  color: var(--color-h1);
+  padding-left: 24px;
+  max-height: 64px;
+}
+.l_header #wrapper .nav-main .title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-shrink: 0;
+  line-height: 64px;
+  padding: 0 24px;
+  font-size: 1.5rem;
+  font-family: "Lobster", "Zhi Mang Xing", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Helvetica, monospace;
+}
+.l_header #wrapper .nav-main .title img {
+  height: 64px;
+}
+.l_header .nav-sub {
+  max-width: 1080px;
+  margin: auto;
+}
+.l_header .nav-sub .title {
+  font-weight: bold;
+  font-family: "Noto Sans SC", "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Menlo, Monaco, monospace, sans-serif;
+  line-height: 1.2;
+  max-height: 64px;
+  white-space: normal;
+  flex-shrink: 1;
+}
+.l_header .switcher {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: none;
+  line-height: 64px;
+  align-items: center;
+}
+.l_header .switcher .s-toc {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .l_header .switcher .s-toc {
+    display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+    display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+    display: -ms-flexbox /* TWEENER - IE 10 */;
+    display: -webkit-flex /* NEW - Chrome */;
+    display: flex /* NEW, Spec - Opera 12.1, Firefox 20+ */;
+    display: flex;
+  }
+}
+.l_header .switcher >li {
+  height: 48px;
+  transition: all 0.28s ease;
+  -webkit-transition: all 0.28s ease;
+  -khtml-transition: all 0.28s ease;
+  -moz-transition: all 0.28s ease;
+  -o-transition: all 0.28s ease;
+  -ms-transition: all 0.28s ease;
+  margin: 2px;
+}
+@media screen and (max-width: 500px) {
+  .l_header .switcher >li {
+    margin: 0 1px;
+    height: 48px;
+  }
+}
+.l_header .switcher >li >a {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: -ms-flexbox /* TWEENER - IE 10 */;
+  display: -webkit-flex /* NEW - Chrome */;
+  display: flex /* NEW, Spec - Opera 12.1, Firefox 20+ */;
+  display: flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+  -khtml-justify-content: center;
+  -moz-justify-content: center;
+  -o-justify-content: center;
+  -ms-justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  padding: 0.85em 1.1em;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border: none;
+  transition: all 0.28s ease;
+  -webkit-transition: all 0.28s ease;
+  -khtml-transition: all 0.28s ease;
+  -moz-transition: all 0.28s ease;
+  -o-transition: all 0.28s ease;
+  -ms-transition: all 0.28s ease;
+  color: #0d5661;
+}
+.l_header .switcher >li >a:hover {
+  border: none;
+}
+.l_header .switcher >li >a.active,
+.l_header .switcher >li >a:active {
+  border: none;
+  background: var(--color-site-bg);
+}
+@media screen and (max-width: 500px) {
+  .l_header .switcher >li >a {
+    width: 36px;
+    height: 48px;
+  }
+}
+.l_header .nav-sub .switcher {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: -ms-flexbox /* TWEENER - IE 10 */;
+  display: -webkit-flex /* NEW - Chrome */;
+  display: flex /* NEW, Spec - Opera 12.1, Firefox 20+ */;
+  display: flex;
+}
+.l_header .m_search {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: -ms-flexbox /* TWEENER - IE 10 */;
+  display: -webkit-flex /* NEW - Chrome */;
+  display: flex /* NEW, Spec - Opera 12.1, Firefox 20+ */;
+  display: flex;
+  height: 64px;
+  width: 240px;
+  transition: all 0.28s ease;
+  -webkit-transition: all 0.28s ease;
+  -khtml-transition: all 0.28s ease;
+  -moz-transition: all 0.28s ease;
+  -o-transition: all 0.28s ease;
+  -ms-transition: all 0.28s ease;
+}
+@media screen and (max-width: 1024px) {
+  .l_header .m_search {
+    width: 44px;
+    min-width: 44px;
+  }
+  .l_header .m_search input::placeholder {
+    opacity: 0;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+  }
+  .l_header .m_search:hover {
+    width: 240px;
+  }
+  .l_header .m_search:hover input::placeholder {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+}
+@media screen and (min-width: 500px) {
+  .l_header .m_search:hover .input {
+    width: 100%;
+  }
+  .l_header .m_search:hover .input::placeholder {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+}
+@media screen and (max-width: 500px) {
+  .l_header .m_search {
+    min-width: 0;
+  }
+  .l_header .m_search input::placeholder {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+}
+.l_header .m_search .form {
+  position: relative;
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: -ms-flexbox /* TWEENER - IE 10 */;
+  display: -webkit-flex /* NEW - Chrome */;
+  display: flex /* NEW, Spec - Opera 12.1, Firefox 20+ */;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.l_header .m_search .icon {
+  position: absolute;
+  width: 36px;
+  left: 5px;
+  color: var(--color-meta);
+}
+@media screen and (max-width: 500px) {
+  .l_header .m_search .icon {
+    display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+    display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+    display: none;
+  }
+}
+.l_header .m_search .input {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: block;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  line-height: 1.3;
+  width: 100%;
+  color: var(--color-text);
+  background: #fafafa;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding-left: 40px;
+  font-size: 0.875rem;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border: none;
+  transition: all 0.28s ease;
+  -webkit-transition: all 0.28s ease;
+  -khtml-transition: all 0.28s ease;
+  -moz-transition: all 0.28s ease;
+  -o-transition: all 0.28s ease;
+  -ms-transition: all 0.28s ease;
+}
+@media screen and (min-width: 500px) {
+  .l_header .m_search .input:focus {
+    box-shadow: 0 4px 8px 0px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0 4px 8px 0px rgba(0,0,0,0.1);
+  }
+}
+@media screen and (max-width: 500px) {
+  .l_header .m_search .input {
+    background: var(--color-block);
+    padding-left: 8px;
+    border: none;
+  }
+  .l_header .m_search .input:hover,
+  .l_header .m_search .input:focus {
+    border: none;
+  }
+}
+@media (max-width: 500px) {
+  .l_header .m_search {
+    left: 0;
+    width: 0;
+    overflow: hidden;
+    position: absolute;
+    background: #fff;
+    transition: all 0.28s ease;
+    -webkit-transition: all 0.28s ease;
+    -khtml-transition: all 0.28s ease;
+    -moz-transition: all 0.28s ease;
+    -o-transition: all 0.28s ease;
+    -ms-transition: all 0.28s ease;
+  }
+  .l_header .m_search .input {
+    border-radius: 32px;
+    -webkit-border-radius: 32px;
+    margin-left: 16px;
+    padding-left: 16px;
+  }
+  .l_header.z_search-open .m_search {
+    width: 100%;
+  }
+  .l_header.z_search-open .m_search .input {
+    width: calc(100% - 120px);
+  }
+}
+ul.m-pc >li>a {
+  color: inherit;
+  border-bottom: 2px solid transparent;
+}
+ul.m-pc >li>a:active,
+ul.m-pc >li>a.active {
+  border-bottom: 2px solid #0d5661;
+}
+ul.m-pc li:hover >ul.list-v,
+ul.list-v li:hover >ul.list-v {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: block;
+}
+ul.nav-list-h {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: -ms-flexbox /* TWEENER - IE 10 */;
+  display: -webkit-flex /* NEW - Chrome */;
+  display: flex /* NEW, Spec - Opera 12.1, Firefox 20+ */;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-end;
+  -webkit-justify-content: flex-end;
+  -khtml-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  -o-justify-content: flex-end;
+  -ms-justify-content: flex-end;
+  -webkit-justify-content: flex-end;
+}
+ul.nav-list-h>li {
+  position: relative;
+  justify-content: center;
+  -webkit-justify-content: center;
+  -khtml-justify-content: center;
+  -moz-justify-content: center;
+  -o-justify-content: center;
+  -ms-justify-content: center;
+  height: 100%;
+  line-height: 2.4;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+ul.nav-list-h>li >a {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 600;
+}
+ul.list-v {
+  z-index: 1;
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: none;
+  position: absolute;
+  background: var(--color-card);
+  box-shadow: 0 2px 4px 0px rgba(0,0,0,0.08), 0 4px 8px 0px rgba(0,0,0,0.08), 0 8px 16px 0px rgba(0,0,0,0.08);
+  -webkit-box-shadow: 0 2px 4px 0px rgba(0,0,0,0.08), 0 4px 8px 0px rgba(0,0,0,0.08), 0 8px 16px 0px rgba(0,0,0,0.08);
+  margin-top: -6px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  padding: 8px 0;
+}
+ul.list-v.show {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: block;
+}
+ul.list-v hr {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+ul.list-v >li {
+  white-space: nowrap;
+  word-break: keep-all;
+}
+ul.list-v >li.header {
+  font-size: 0.875rem;
+  font-weight: bold;
+  line-height: 2em;
+  color: var(--color-meta);
+  margin: 8px 16px 4px;
+}
+ul.list-v >li.header i {
+  margin-right: 8px;
+}
+ul.list-v >li ul {
+  margin-left: 0;
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: none;
+  margin-top: -40px;
+}
+ul.list-v .aplayer-container {
+  min-height: 64px;
+  padding: 6px 16px;
+}
+ul.list-v >li>a {
+  transition: all 0.28s ease;
+  -webkit-transition: all 0.28s ease;
+  -khtml-transition: all 0.28s ease;
+  -moz-transition: all 0.28s ease;
+  -o-transition: all 0.28s ease;
+  -ms-transition: all 0.28s ease;
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: block;
+  color: var(--color-list);
+  font-size: 0.875rem;
+  font-weight: bold;
+  line-height: 36px;
+  padding: 0 20px 0 16px;
+  text-overflow: ellipsis;
+  margin: 0 4px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+}
+@media screen and (max-width: 1024px) {
+  ul.list-v >li>a {
+    line-height: 40px;
+  }
+}
+ul.list-v >li>a >i {
+  margin-right: 8px;
+}
+ul.list-v >li>a:active,
+ul.list-v >li>a.active {
+  color: var(--color-list-hl);
+}
+ul.list-v >li>a:hover {
+  color: var(--color-list-hl);
+  background: var(--color-site-bg);
+}
+.l_header .menu >ul>li>a {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: block;
+  padding: 0 8px;
+}
+.l_header .menu >ul>li>a >i {
+  margin-right: 4px;
+}
+.l_header ul.nav-list-h>li {
+  color: var(--color-list);
+  line-height: 64px;
+}
+.l_header ul.nav-list-h>li >a {
+  max-height: 64px;
+  overflow: hidden;
+  color: inherit;
+}
+.l_header ul.nav-list-h>li >a:active,
+.l_header ul.nav-list-h>li >a.active {
+  color: #0d5661;
+}
+.l_header ul.nav-list-h>li:hover>a {
+  color: var(--color-list-hl);
+}
+.l_header ul.nav-list-h>li i.music {
+  animation: rotate-effect 1.5s linear infinite;
+  -webkit-animation: rotate-effect 1.5s linear infinite;
+  -khtml-animation: rotate-effect 1.5s linear infinite;
+  -moz-animation: rotate-effect 1.5s linear infinite;
+  -o-animation: rotate-effect 1.5s linear infinite;
+  -ms-animation: rotate-effect 1.5s linear infinite;
+}
+@-moz-keyframes rotate-effect {
+  0% {
+    transform: rotate(0);
+    -webkit-transform: rotate(0);
+    -khtml-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -o-transform: rotate(0);
+    -ms-transform: rotate(0);
+  }
+  25% {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -khtml-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -khtml-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -khtml-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -khtml-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rotate-effect {
+  0% {
+    transform: rotate(0);
+    -webkit-transform: rotate(0);
+    -khtml-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -o-transform: rotate(0);
+    -ms-transform: rotate(0);
+  }
+  25% {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -khtml-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -khtml-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -khtml-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -khtml-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+  }
+}
+@-o-keyframes rotate-effect {
+  0% {
+    transform: rotate(0);
+    -webkit-transform: rotate(0);
+    -khtml-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -o-transform: rotate(0);
+    -ms-transform: rotate(0);
+  }
+  25% {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -khtml-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -khtml-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -khtml-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -khtml-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+  }
+}
+@keyframes rotate-effect {
+  0% {
+    transform: rotate(0);
+    -webkit-transform: rotate(0);
+    -khtml-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -o-transform: rotate(0);
+    -ms-transform: rotate(0);
+  }
+  25% {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -khtml-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -khtml-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -khtml-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -khtml-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+  }
+}
+.menu-phone li ul.list-v {
+  right: calc(100% - 0.5 * 16px);
+}
+.menu-phone li ul.list-v ul {
+  right: calc(100% - 0.5 * 16px);
+}
+#wrapper {
+  max-width: 1080px;
+  margin: auto;
+}
+@media screen and (min-width: 2048px) {
+  #wrapper {
+    max-width: 55vw;
+  }
+}
+#wrapper .menu {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1 1;
+  -ms-flex: 1 1;
+  flex: 1 1;
+  margin: 0 16px 0 0;
+}
+#wrapper .menu .list-v ul {
+  left: calc(100% - 0.5 * 16px);
+}
+.menu-phone {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: none;
+  margin-top: 16px;
+  right: 8px;
+  transition: all 0.28s ease;
+  -webkit-transition: all 0.28s ease;
+  -khtml-transition: all 0.28s ease;
+  -moz-transition: all 0.28s ease;
+  -o-transition: all 0.28s ease;
+  -ms-transition: all 0.28s ease;
+}
+.menu-phone ul {
+  right: calc(100% - 0.5 * 16px);
+}
+@media screen and (max-width: 500px) {
+  .menu-phone {
+    display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+    display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+    display: block;
+  }
+}
+.l_header {
+  max-width: 65vw;
+  left: calc((100% - 65vw) * 0.5);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+@media screen and (max-width: 2048px) {
+  .l_header {
+    max-width: 1112px;
+    left: calc((100% - 1112px) * 0.5);
+  }
+}
+@media screen and (max-width: 1112px) {
+  .l_header {
+    left: 0;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .l_header .container {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .l_header #wrapper .nav-main .title {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .l_header #wrapper .nav-sub {
+    width: 100%;
+  }
+  .l_header #wrapper .nav-sub .title {
+    overflow-y: scroll;
+    margin-top: 2px;
+    padding: 8px 16px;
+  }
+  .l_header #wrapper .switcher {
+    display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+    display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+    display: -ms-flexbox /* TWEENER - IE 10 */;
+    display: -webkit-flex /* NEW - Chrome */;
+    display: flex /* NEW, Spec - Opera 12.1, Firefox 20+ */;
+    display: flex;
+    margin-right: 8px;
+  }
+  .l_header .menu {
+    display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+    display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .list-v li {
+    max-width: 270px;
+  }
+}
+#u-search {
+  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
+  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 60px 20px;
+  z-index: 1001;
+}
+@media screen and (max-width: 680px) {
+  #u-search {
+    padding: 0px;
+  }
+}
+@media screen and (prefers-color-scheme: dark) and (max-width: 500px) {
+  .l_header .m_search {
+    background: var(--color-site-bg) !important;
+  }
+}
+
+  </style>
+  <link rel="stylesheet" href="/css/style.css" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.css"></noscript>
+    <script>
+      let userColorScheme=localStorage.getItem("color-scheme")
+      if(userColorScheme){
+        document.documentElement.setAttribute("color-scheme", userColorScheme);
+      }
+    </script>
+  
+<script>
+if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMode))
+    document.write(
+	'<style>'+
+		'html{'+
+			'overflow-x: hidden !important;'+
+			'overflow-y: hidden !important;'+
+		'}'+
+		'.kill-ie{'+
+			'text-align:center;'+
+			'height: 100%;'+
+			'margin-top: 15%;'+
+			'margin-bottom: 5500%;'+
+		'}'+
+    '.kill-t{'+
+      'font-size: 2rem;'+
+    '}'+
+    '.kill-c{'+
+      'font-size: 1.2rem;'+
+    '}'+
+		'#l_header,#l_body{'+
+			'display: none;'+
+		'}'+
+	'</style>'+
+    '<div class="kill-ie">'+
+        `<span class="kill-t"><b>抱歉，您的浏览器无法访问本站</b></span><br/>`+
+        `<span class="kill-c">微软已经于2016年终止了对 Internet Explorer (IE) 10 及更早版本的支持，<br/>继续使用存在极大的安全隐患，请使用当代主流的浏览器进行访问。</span><br/>`+
+        `<a target="_blank" rel="noopener" href="https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/"><strong>了解详情 ></strong></a>`+
+    '</div>');
+</script>
+
+
+<noscript>
+	<style>
+		html{
+			overflow-x: hidden !important;
+			overflow-y: hidden !important;
+		}
+		.kill-noscript{
+			text-align:center;
+			height: 100%;
+			margin-top: 15%;
+			margin-bottom: 5500%;
+		}
+    .kill-t{
+      font-size: 2rem;
+    }
+    .kill-c{
+      font-size: 1.2rem;
+    }
+		#l_header,#l_body{
+			display: none;
+		}
+	</style>
+    <div class="kill-noscript">
+        <span class="kill-t"><b>抱歉，您的浏览器无法访问本站</b></span><br/>
+        <span class="kill-c">本页面需要浏览器支持（启用）JavaScript</span><br/>
+        <a target="_blank" rel="noopener" href="https://www.baidu.com/s?wd=启用JavaScript"><strong>了解详情 ></strong></a>
+    </div>
+</noscript>
+
+
+  <script>
+  /************这个文件存放不需要重载的全局变量和全局函数*********/
+  window.volantis = {}; // volantis 全局变量
+  volantis.debug = "false"; // 调试模式
+  volantis.dom = {}; // 页面Dom see: /source/js/app.js etc.
+  /******************** volantis.dom.$ ********************************/
+  // 注：这里没有选择器，也没有forEach一次只处理一个dom，这里重新封装主题常用的dom方法，返回的是dom对象，对象包含了以下方法，同时保留dom的原生API
+  function volantisDom(ele) {
+    if (!ele) ele = document.createElement("div")
+    this.ele = ele;
+    // ==============================================================
+    this.ele.find = (c) => {
+      let q = this.ele.querySelector(c)
+      if (q)
+        return new volantisDom(q)
+    }
+    // ==============================================================
+    this.ele.hasClass = (c) => {
+      return this.ele.className.match(new RegExp('(\\s|^)' + c + '(\\s|$)'));
+    }
+    this.ele.addClass = (c) => {
+      this.ele.classList.add(c);
+      return this.ele
+    }
+    this.ele.removeClass = (c) => {
+      this.ele.classList.remove(c);
+      return this.ele
+    }
+    this.ele.toggleClass = (c) => {
+      if (this.ele.hasClass(c)) {
+        this.ele.removeClass(c)
+      } else {
+        this.ele.addClass(c)
+      }
+      return this.ele
+    }
+    // ==============================================================
+    this.ele.on = (c, f) => {
+      this.ele.addEventListener(c, f, false)
+      return this.ele
+    }
+    this.ele.click = (f, r) => {
+      this.ele.on("click", f, r)
+      return this.ele
+    }
+    this.ele.scroll = (f, r) => {
+      this.ele.on("scroll", f, r)
+      return this.ele
+    }
+    // ==============================================================
+    this.ele.html = (c) => {
+      // if(c=== undefined){
+      //   return this.ele.innerHTML
+      // }else{
+      this.ele.innerHTML = c
+      return this.ele
+      // }
+    }
+    // ==============================================================
+    this.ele.hide = (c) => {
+      this.ele.style.display = "none"
+      return this.ele
+    }
+    this.ele.show = (c) => {
+      this.ele.style.display = "block"
+      return this.ele
+    }
+    // ==============================================================
+    return this.ele
+  }
+  volantis.dom.$ = (ele) => {
+    return !!ele ? new volantisDom(ele) : null;
+  }
+  /******************** RunItem ********************************/
+  function RunItem() {
+    this.list = []; // 存放回调函数
+    this.start = () => {
+      for (var i = 0; i < this.list.length; i++) {
+        this.list[i].run();
+      }
+    };
+    this.push = (fn, name, setRequestAnimationFrame = true) => {
+      let myfn = fn
+      if (setRequestAnimationFrame) {
+        myfn = () => {
+          volantis.requestAnimationFrame(fn)
+        }
+      }
+      var f = new Item(myfn, name);
+      this.list.push(f);
+    };
+    this.remove = (name) => {
+      for (let index = 0; index < this.list.length; index++) {
+        const e = this.list[index];
+        if (e.name == name) {
+          this.list.splice(index, 1);
+        }
+      }
+    }
+    // 构造一个可以run的对象
+    function Item(fn, name) {
+      // 函数名称
+      this.name = name || fn.name;
+      // run方法
+      this.run = () => {
+        try {
+          fn()
+        } catch (error) {
+          console.log(error);
+        }
+      };
+    }
+  }
+  /******************** RightMenu ********************************/
+  // volantis.rightmenu.handle(callBack[,"callBackName"]) 外部菜单项控制
+  // 可在 volantis.mouseEvent 处获取右键事件
+  volantis.rightmenu = {};
+  volantis.rightmenu.method = {
+    handle: new RunItem(),
+  }
+  volantis.rightmenu = Object.assign(volantis.rightmenu, {
+    handle: volantis.rightmenu.method.handle.push,
+  });
+  /********************  Dark Mode  ********************************/
+  // /layout/_partial/scripts/darkmode.ejs
+  // volantis.dark.mode 当前模式 dark or light
+  // volantis.dark.toggle() 暗黑模式触发器
+  // volantis.dark.push(callBack[,"callBackName"]) 传入触发器回调函数
+  volantis.dark = {};
+  volantis.dark.method = {
+    toggle: new RunItem(),
+  };
+  volantis.dark = Object.assign(volantis.dark, {
+    push: volantis.dark.method.toggle.push,
+  });
+  /********************  Message  ********************************/
+  // VolantisApp.message
+  /********************  isMobile  ********************************/
+  // /source/js/app.js
+  // volantis.isMobile
+  // volantis.isMobileOld
+  /********************脚本动态加载函数********************************/
+  // volantis.js(src, cb)  cb 可以传入onload回调函数 或者 JSON对象 例如: volantis.js("src", ()=>{}) 或 volantis.js("src", {defer:true,onload:()=>{}})
+  // volantis.css(src)
+
+  // 返回Promise对象，如下方法同步加载资源，这利于处理文件资源之间的依赖关系，例如：APlayer 需要在 MetingJS 之前加载
+  // (async () => {
+  //     await volantis.js("...theme.plugins.aplayer.js.aplayer...")
+  //     await volantis.js("...theme.plugins.aplayer.js.meting...")
+  // })();
+
+  // 已经加入了setTimeout
+  volantis.js = (src, cb) => {
+    return new Promise(resolve => {
+      setTimeout(function () {
+        var HEAD = document.getElementsByTagName("head")[0] || document.documentElement;
+        var script = document.createElement("script");
+        script.setAttribute("type", "text/javascript");
+        if (cb) {
+          if (JSON.stringify(cb)) {
+            for (let p in cb) {
+              if (p == "onload") {
+                script[p] = () => {
+                  cb[p]()
+                  resolve()
+                }
+              } else {
+                script[p] = cb[p]
+                script.onload = resolve
+              }
+            }
+          } else {
+            script.onload = () => {
+              cb()
+              resolve()
+            };
+          }
+        } else {
+          script.onload = resolve
+        }
+        script.setAttribute("src", src);
+        HEAD.appendChild(script);
+      });
+    });
+  }
+  volantis.css = (src) => {
+    return new Promise(resolve => {
+      setTimeout(function () {
+        var link = document.createElement('link');
+        link.rel = "stylesheet";
+        link.href = src;
+        link.onload = resolve;
+        document.getElementsByTagName("head")[0].appendChild(link);
+      });
+    });
+  }
+  /********************按需加载的插件********************************/
+  // volantis.import.jQuery().then(()=>{})
+  volantis.import = {
+    jQuery: () => {
+      if (typeof jQuery == "undefined") {
+        return volantis.js("https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js")
+      } else {
+        return new Promise(resolve => {
+          resolve()
+        });
+      }
+    }
+  }
+  /********************** requestAnimationFrame ********************************/
+  // 1、requestAnimationFrame 会把每一帧中的所有 DOM 操作集中起来，在一次重绘或回流中就完成，并且重绘或回流的时间间隔紧紧跟随浏览器的刷新频率，一般来说，这个频率为每秒60帧。
+  // 2、在隐藏或不可见的元素中，requestAnimationFrame 将不会进行重绘或回流，这当然就意味着更少的的 cpu，gpu 和内存使用量。
+  volantis.requestAnimationFrame = (fn) => {
+    if (!window.requestAnimationFrame) {
+      window.requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame;
+    }
+    window.requestAnimationFrame(fn)
+  }
+  /************************ layoutHelper *****************************************/
+  volantis.layoutHelper = (helper, html, opt) => {
+    opt = Object.assign({ clean: false}, opt)
+    function myhelper(helper, html, clean) {
+      volantis.tempDiv = document.createElement("div");
+      volantis.tempDiv.innerHTML = html;
+      let layoutHelper = document.querySelector("#layoutHelper-" + helper)
+      if (layoutHelper) {
+        if (clean) {
+          layoutHelper.innerHTML = ""
+        }
+        layoutHelper.append(volantis.tempDiv);
+      }
+    }
+    myhelper(helper, html, opt.clean)
+  }
+  /****************************** 滚动事件处理 ****************************************/
+  volantis.scroll = {
+    engine: new RunItem(),
+    unengine: new RunItem(),
+  };
+  volantis.scroll = Object.assign(volantis.scroll, {
+    push: volantis.scroll.engine.push,
+  });
+  // 滚动条距离顶部的距离
+  volantis.scroll.getScrollTop = () => {
+    let scrollPos;
+    if (window.pageYOffset) {
+      scrollPos = window.pageYOffset;
+    } else if (document.compatMode && document.compatMode != 'BackCompat') {
+      scrollPos = document.documentElement.scrollTop;
+    } else if (document.body) {
+      scrollPos = document.body.scrollTop;
+    }
+    return scrollPos;
+  }
+  volantis.scroll.scrollHeight = function () {
+    return Math.max(
+      document.body.scrollHeight,
+      document.documentElement.scrollHeight,
+    )
+  }
+  volantis.scroll.offsetHeight = function () {
+    return Math.max(
+      document.body.offsetHeight,
+      document.documentElement.offsetHeight,
+      document.body.clientHeight,
+      document.documentElement.clientHeight
+    )
+  }
+  volantis.scroll.progress = function () {
+    return volantis.scroll.getScrollTop() / (volantis.scroll.scrollHeight() - volantis.scroll.offsetHeight())
+  }
+  // 使用 requestAnimationFrame 处理滚动事件
+  // `volantis.scroll.del` 中存储了一个数值, 该数值检测一定时间间隔内滚动条滚动的位移, 数值的检测频率是浏览器的刷新频率. 数值为正数时, 表示向下滚动. 数值为负数时, 表示向上滚动.
+  volantis.scroll.handleScrollEvents = () => {
+    volantis.scroll.lastScrollTop = volantis.scroll.getScrollTop()
+    function loop() {
+      const scrollTop = volantis.scroll.getScrollTop();
+      if (volantis.scroll.lastScrollTop !== scrollTop) {
+        volantis.scroll.del = scrollTop - volantis.scroll.lastScrollTop;
+        volantis.scroll.lastScrollTop = scrollTop;
+        // if (volantis.scroll.del > 0) {
+        //   console.log("向下滚动");
+        // } else {
+        //   console.log("向上滚动");
+        // }
+        // 注销过期的unengine未滚动事件
+        volantis.scroll.unengine.list = []
+        volantis.scroll.engine.start();
+      } else {
+        volantis.scroll.unengine.start();
+      }
+      volantis.requestAnimationFrame(loop)
+    }
+    volantis.requestAnimationFrame(loop)
+  }
+  volantis.scroll.handleScrollEvents()
+  volantis.scroll.ele = null;
+  // 触发页面滚动至目标元素位置
+  volantis.scroll.to = (ele, option = {}) => {
+    if (!ele) return;
+    volantis.scroll.ele = ele;
+    // 默认配置
+    opt = {
+      top: ele.getBoundingClientRect().top + document.documentElement.scrollTop,
+      behavior: "smooth"
+    }
+    // 定义配置
+    if ("top" in option) {
+      opt.top = option.top
+    }
+    if ("behavior" in option) {
+      opt.behavior = option.behavior
+    }
+    if ("addTop" in option) {
+      opt.top += option.addTop
+    }
+    if (!("observerDic" in option)) {
+      option.observerDic = 100
+    }
+    // 滚动
+    window.scrollTo(opt);
+    // 监视器
+    // 监视并矫正元素滚动到指定位置
+    // 用于处理 lazyload 引起的 cls 导致的定位失败问题
+    // option.observer = false
+    if (option.observer) {
+      setTimeout(() => {
+        if (volantis.scroll.ele != ele) {
+          return
+        }
+        volantis.scroll.unengine.push(() => {
+          let me = ele.getBoundingClientRect().top
+          if (!(me >= -option.observerDic && me <= option.observerDic)) {
+            volantis.scroll.to(ele, option)
+          }
+          volantis.scroll.unengine.remove("unengineObserver")
+        }, "unengineObserver")
+      }, 1000)
+    }
+  }
+  /********************** Content Visibility ********************************/
+  // 见 source/css/first.styl 如果遇到任何问题 删除 .post-story 即可
+  // 一个元素被声明 content-visibility 属性后 如果元素不在 viewport 中 浏览器不会计算其后代元素样式和属性 从而节省 Style & Layout 耗时
+  // content-visibility 的副作用: 锚点失效 等等(实验初期 暂不明确), 使用此方法清除样式
+  volantis.cleanContentVisibility = () => {
+    if (document.querySelector(".post-story")) {
+      console.log("cleanContentVisibility");
+      document.querySelectorAll(".post-story").forEach(e => {
+        e.classList.remove("post-story")
+      })
+    }
+  }
+  /******************************************************************************/
+  /******************************************************************************/
+  /******************************************************************************/
+  //图像加载出错时的处理
+  function errorImgAvatar(img) {
+    img.src = "https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg";
+    img.onerror = null;
+  }
+  function errorImgCover(img) {
+    img.src = "https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg";
+    img.onerror = null;
+  }
+  /******************************************************************************/
+</script>
+
+<script>
+  window.pdata={}
+  pdata.ispage=false;
+  pdata.commentPath="";
+  pdata.commentPlaceholder="";
+  pdata.commentConfig={};
+  volantis.GLOBAL_CONFIG ={
+    root: '/',
+    debug: false,
+    default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
+    lastupdate: new Date(1741185789264),
+    cdn: {
+      izitoast_css: 'https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css',
+      izitoast_js: 'https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js',
+      fancybox_css: 'https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.36/fancybox/fancybox.min.css',
+      fancybox_js: 'https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.36/fancybox/fancybox.umd.min.js'
+    },
+    sidebar: {
+      for_page: ["blogger","category","tagcloud","webinfo"],
+      for_post: ["toc","category"],
+      webinfo: {
+        lastupd: {
+          enable: true,
+          friendlyShow: true
+        },
+        runtime: {
+          data: "2020/02/26",
+          unit: "日"
+        }
+      }
+    },
+    plugins: {
+      message: {"enable":false,"icon":{"default":"fa-solid fa-info-circle light-blue","quection":"fa-solid fa-question-circle light-blue"},"time":{"default":5000,"quection":20000},"position":"topRight","transitionIn":"bounceInLeft","transitionOut":"fadeOutRight","titleColor":"var(--color-text)","messageColor":"var(--color-text)","backgroundColor":"var(--color-card)","zindex":2147483647,"copyright":{"enable":false,"title":"知识共享许可协议","message":"请遵守 CC BY-NC-SA 4.0 协议。","icon":"far fa-copyright light-blue"},"aplayer":{"enable":true,"play":"fa-solid fa-play","pause":"fa-solid fa-pause"},"rightmenu":{"enable":true,"notice":true}},
+      
+      
+    },
+    search: {
+      
+
+      
+        dataPath: (("/" || "/").endsWith("/") ? "/" || "/" : "//" || "/") + "content.json",
+      
+
+      
+    },
+    languages: {
+      
+        search: {
+          hits_empty: "找不到您查询的内容：${query}",
+          hits_stats: "找到 ${hits} 条结果，用时 ${time} 毫秒",
+        }
+      
+    }
+  }
+</script>
+  <!-- import head_end begin -->
+      <script async src="https://analytics.champhoon.xyz/script.js" data-website-id="d924f4fd-b450-42e6-96fe-657162d1bd3f"></script>
+  <!-- import head_end end -->
+  <!-- Custom Files headEnd begin-->
+  
+  <!-- Custom Files headEnd end-->
+</head>
+  <body itemscope itemtype="https://schema.org.cn/WebPage">
+    <!-- import body_begin begin-->
+    <!-- import body_begin end-->
+    <!-- Custom Files bodyBegin begin-->
+    
+    <!-- Custom Files bodyBegin end-->
+    <header itemscope itemtype="https://schema.org.cn/WPHeader" id="l_header" class="l_header auto shadow show" style='opacity: 0' >
+  <div class='container'>
+  <div id='wrapper'>
+    <div class='nav-sub'>
+      <p class="title"></p>
+      <ul class='switcher nav-list-h m-phone'>
+        <li><a id="s-comment" class="fa-solid fa-comments fa-fw" target="_self" title="comment"></a></li>
+        
+          <li><a id="s-toc" class="s-toc fa-solid fa-list fa-fw" target="_self" title="toc"></a></li>
+        
+      </ul>
+    </div>
+		<div class="nav-main">
+      
+        
+        <a class="title flat-box" target="_self" href='/'>
+          
+          
+            <i class='fa-solid fa-leaf'></i>
+          
+          
+            ChaM&log.
+          
+        </a>
+      
+
+			<div class='menu navigation'>
+				<ul class='nav-list-h m-pc'>
+          
+          
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/archives/" title="归档"
+                  
+                  
+                  
+                    active-action="action-archives"
+                  >
+                  <i class='fa-solid fa-book fa-fw'></i>归档
+                </a>
+                
+                  <ul class="list-v">
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/categories/" title="分类"
+                  
+                  
+                  
+                    active-action="action-categories"
+                  >
+                  <i class='fa-solid fa-folder-open fa-fw'></i>分类
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/tags/" title="标签"
+                  
+                  
+                  
+                    active-action="action-tags"
+                  >
+                  <i class='fa-solid fa-tags fa-fw'></i>标签
+                </a>
+                
+              </li>
+            
+          
+                    
+                  </ul>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/guest-book/" title="留言"
+                  
+                  
+                  
+                    active-action="action-guest-book"
+                  >
+                  <i class='fa-solid fa-pen-nib fa-fw'></i>留言
+                </a>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/links/" title="友链"
+                  
+                  
+                  
+                    active-action="action-links"
+                  >
+                  <i class='fa-solid fa-link fa-fw'></i>友链
+                </a>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                 title="补完"
+                  
+                  
+                  >
+                  <i class='fa-solid fa-dice fa-fw'></i>补完
+                </a>
+                
+                  <ul class="list-v">
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/bangumi" title="番剧"
+                  
+                  
+                  
+                    active-action="action-bangumi"
+                  >
+                  <i class='fa-brands fa-bilibili fa-fw'></i>番剧
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/trakt/" title="剧集"
+                  
+                  
+                  
+                    active-action="action-trakt"
+                  >
+                  <i class='fa-brands fa-youtube fa-fw'></i>剧集
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/game/" title="游戏"
+                  
+                  
+                  
+                    active-action="action-game"
+                  >
+                  <i class='fa-brands fa-steam fa-fw'></i>游戏
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/music/" title="歌单"
+                  
+                  
+                  
+                    active-action="action-music"
+                  >
+                  <i class='fa-brands fa-spotify fa-fw'></i>歌单
+                </a>
+                
+              </li>
+            
+          
+                    
+                  </ul>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                 title="关于"
+                  
+                  
+                  >
+                  <i class='fa-solid fa-paw fa-fw'></i>关于
+                </a>
+                
+                  <ul class="list-v">
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/about/" title="敝站"
+                  
+                  
+                  
+                    active-action="action-about"
+                  >
+                  <i class='fa-solid fa-leaf fa-fw'></i>敝站
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                target="_blank" rel="noopener" href="https://index.champhoon.xyz/" title="在下"
+                  
+                  
+                  
+                    active-action="action-https:indexchamphoonxyz"
+                  >
+                  <i class='fa-solid fa-ghost fa-fw'></i>在下
+                </a>
+                
+              </li>
+            
+          
+                    
+                  </ul>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                 title="undefined"
+                  
+                  
+                  >
+                  <i class='fa-solid fa-caret-down fa-fw'></i>
+                </a>
+                
+                  <ul class="list-v">
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box header toggle-mode-btn">
+                  <i class='fa-solid fa-paint-roller fa-fw'></i>明暗
+                </a>
+              <li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/atom.xml" title="RSS"
+                  
+                  
+                  
+                    active-action="action-atomxml"
+                  >
+                  <i class='fa-solid fa-rss fa-fw'></i>RSS
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                target="_blank" rel="noopener" href="https://analytics.champhoon.xyz/share/TUmv63M88ebIAhaZ/%E6%BE%84%E6%B2%A8%E7%9A%84%E6%BC%AB%E6%B8%B8%E8%8C%B6%E8%AE%B0/" title="统计"
+                  
+                  
+                  
+                    active-action="action-https:analyticschamphoonxyzshareTUmv63M88ebIAhaZE6BE84E6B2A8E79A84E6BCABE6B8B8E88CB6E8AEB0"
+                  >
+                  <i class='fa-solid fa-chart-pie fa-fw'></i>统计
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/sitemap.xml" title="地图"
+                  
+                  
+                  
+                    active-action="action-sitemapxml"
+                  >
+                  <i class='fa-solid fa-sitemap fa-fw'></i>地图
+                </a>
+                
+              </li>
+            
+          
+                    
+                  </ul>
+                
+              </li>
+            
+          
+          
+				</ul>
+			</div>
+      
+      <div class="m_search">
+        <form name="searchform" class="form u-search-form">
+          <i class="icon fa-solid fa-search fa-fw"></i>
+          <input type="text" class="input u-search-input" placeholder="搜索" />
+        </form>
+      </div>
+      
+
+			<ul class='switcher nav-list-h m-phone'>
+				
+					<li><a class="s-search fa-solid fa-search fa-fw" target="_self" title="search"></a></li>
+				
+				<li>
+          <a class="s-menu fa-solid fa-bars fa-fw" target="_self" title="menu"></a>
+          <ul class="menu-phone list-v navigation white-box">
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/archives/" title="归档"
+                  
+                  
+                  
+                    active-action="action-archives"
+                  >
+                  <i class='fa-solid fa-book fa-fw'></i>归档
+                </a>
+                
+                  <ul class="list-v">
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/categories/" title="分类"
+                  
+                  
+                  
+                    active-action="action-categories"
+                  >
+                  <i class='fa-solid fa-folder-open fa-fw'></i>分类
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/tags/" title="标签"
+                  
+                  
+                  
+                    active-action="action-tags"
+                  >
+                  <i class='fa-solid fa-tags fa-fw'></i>标签
+                </a>
+                
+              </li>
+            
+          
+                    
+                  </ul>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/guest-book/" title="留言"
+                  
+                  
+                  
+                    active-action="action-guest-book"
+                  >
+                  <i class='fa-solid fa-pen-nib fa-fw'></i>留言
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/links/" title="友链"
+                  
+                  
+                  
+                    active-action="action-links"
+                  >
+                  <i class='fa-solid fa-link fa-fw'></i>友链
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                 title="补完"
+                  
+                  
+                  >
+                  <i class='fa-solid fa-dice fa-fw'></i>补完
+                </a>
+                
+                  <ul class="list-v">
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/bangumi" title="番剧"
+                  
+                  
+                  
+                    active-action="action-bangumi"
+                  >
+                  <i class='fa-brands fa-bilibili fa-fw'></i>番剧
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/trakt/" title="剧集"
+                  
+                  
+                  
+                    active-action="action-trakt"
+                  >
+                  <i class='fa-brands fa-youtube fa-fw'></i>剧集
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/game/" title="游戏"
+                  
+                  
+                  
+                    active-action="action-game"
+                  >
+                  <i class='fa-brands fa-steam fa-fw'></i>游戏
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/music/" title="歌单"
+                  
+                  
+                  
+                    active-action="action-music"
+                  >
+                  <i class='fa-brands fa-spotify fa-fw'></i>歌单
+                </a>
+                
+              </li>
+            
+          
+                    
+                  </ul>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                 title="关于"
+                  
+                  
+                  >
+                  <i class='fa-solid fa-paw fa-fw'></i>关于
+                </a>
+                
+                  <ul class="list-v">
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/about/" title="敝站"
+                  
+                  
+                  
+                    active-action="action-about"
+                  >
+                  <i class='fa-solid fa-leaf fa-fw'></i>敝站
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                target="_blank" rel="noopener" href="https://index.champhoon.xyz/" title="在下"
+                  
+                  
+                  
+                    active-action="action-https:indexchamphoonxyz"
+                  >
+                  <i class='fa-solid fa-ghost fa-fw'></i>在下
+                </a>
+                
+              </li>
+            
+          
+                    
+                  </ul>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                 title="undefined"
+                  
+                  
+                  >
+                  <i class='fa-solid fa-caret-down fa-fw'></i>
+                </a>
+                
+                  <ul class="list-v">
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box header toggle-mode-btn">
+                  <i class='fa-solid fa-paint-roller fa-fw'></i>明暗
+                </a>
+              <li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/atom.xml" title="RSS"
+                  
+                  
+                  
+                    active-action="action-atomxml"
+                  >
+                  <i class='fa-solid fa-rss fa-fw'></i>RSS
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                target="_blank" rel="noopener" href="https://analytics.champhoon.xyz/share/TUmv63M88ebIAhaZ/%E6%BE%84%E6%B2%A8%E7%9A%84%E6%BC%AB%E6%B8%B8%E8%8C%B6%E8%AE%B0/" title="统计"
+                  
+                  
+                  
+                    active-action="action-https:analyticschamphoonxyzshareTUmv63M88ebIAhaZE6BE84E6B2A8E79A84E6BCABE6B8B8E88CB6E8AEB0"
+                  >
+                  <i class='fa-solid fa-chart-pie fa-fw'></i>统计
+                </a>
+                
+              </li>
+            
+          
+                    
+                      
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/sitemap.xml" title="地图"
+                  
+                  
+                  
+                    active-action="action-sitemapxml"
+                  >
+                  <i class='fa-solid fa-sitemap fa-fw'></i>地图
+                </a>
+                
+              </li>
+            
+          
+                    
+                  </ul>
+                
+              </li>
+            
+          
+            
+          </ul>
+        </li>
+			</ul>
+
+      <!-- Custom Files header begin -->
+      
+      <!-- Custom Files header end -->
+		</div>
+	</div>
+  </div>
+</header>
+
+    <div id="l_body">
+      <div id="l_cover">
+  
+</div>
+
+      <div id="safearea">
+        <div class="body-wrapper">
+          
+<div id="l_main" class=''>
+  <article itemscope itemtype="https://schema.org.cn/Article" class="article post white-box reveal md shadow article-type-docs" id="docs" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="https://champhoon.xyz/essay/azurlane-z/">
+  <span hidden itemprop="publisher" itemscope itemtype="https://schema.org.cn/Organization">
+    <meta itemprop="name" content="澄沨的漫游茶记">
+  </span>
+  <span hidden itemprop="post" itemscope itemtype="https://schema.org.cn/Post">
+    <meta itemprop="name" content="澄沨的漫游茶记">
+    <meta itemprop="description" content="Stay hungry, Stay foolish.">
+  </span>
+  
+
+
+  
+    <div class='headimg-div'>
+      <a class='headimg-a'>
+        <img itemprop="image" class='headimg' src='https://api.champhoon.xyz/img/blog/azurlane-z/azurlane-z.webp'/>
+      </a>
+    </div>
+  
+  <div class="article-meta" id="top">
+    
+    
+    
+      <h1 class="title" itemprop="name headline">
+        碧蓝航线舰娘原型考据「铁血驱逐篇」
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="https://schema.org.cn/Person">
+  <a itemprop="url" class='author' href="/" rel="nofollow">
+    <img itemprop="image" src="https://gravatar.loli.net/avatar/0778427f9bf775b23349409686010092?s=96&d=mm&r=g">
+    <p itemprop="name">我不是二刺螈</p>
+  </a>
+</div>
+
+          
+        
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2021-11-25T13:40:30+00:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar fa-fw" aria-hidden="true"></i>
+    <p>发布于：2021年11月25日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class="new-meta-item wordcount">
+    <a class='notlink'>
+      <i class="fa-solid fa-newspaper fa-fw" aria-hidden="true"></i>
+      <p>字数：7.2k 字</p>
+    </a>
+  </div>
+  <div class="new-meta-item readtime">
+    <a class='notlink'>
+      <i class="fa-solid fa-hourglass-half fa-fw" aria-hidden="true"></i>
+      <p>时长：25 分钟</p>
+    </a>
+  </div>
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
+      </div>
+    
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><div class="note "><p>封面来源：Z Squadron’s Shopping night out! | janyhero #pixiv <a target="_blank" rel="noopener" href="https://www.pixiv.net/artworks/92052248">https://www.pixiv.net/artworks/92052248</a></p></div>
+
+<div class="note info"><p>此文章由铁血幼儿园指挥官、Z23&#x2F;46 激推、一篇文章写了一年的我不是二刺螈さん荣誉撰稿。</p></div>
+
+<p>玩了这么久的碧蓝航线，百无聊赖之际<psw>贤者时间</psw>突然想到：我好像对老婆们的了解只是处在「哇这个立绘好好看」这种肤浅的层面，至于老婆们在历史上的战绩、体重、装备什么的还是一无所知。<psw>如果只是看重外表的话我又有什么资格说爱她啊啊啊啊！！</psw>所以突发奇想地想要整一手舰娘原型考据，先从我最爱的铁血驱逐开始。</p>
+<p><strong>Z 驱</strong>，指二战开始前直至战争结束，由纳粹德国海军设计，建造服役的所有驱逐舰的<strong>总称</strong>。值得注意的是，虽然国内翻译称为「Z 级驱逐舰」，但是这<strong>严格上来讲是错误的</strong>：德国人从来没有称自己的驱逐舰有什么「Z 级」，世界各国也没有。Z 驱的舰级型号主要以年份 + 改进型号作为舰级名，而那些 <strong>Z + 数字</strong>的组合其实就是她们的序列号。</p>
+<p>1935 年，《英德海军协定》的签署将德国纳入条约范围，德国海军也合法地摆脱了《凡尔赛条约》的限制，得到了 52200 吨的驱逐舰吨位额度。为了尽可能地建造更多的驱逐舰<psw>浪费更多的吨位</psw>，德国人使用了虚报吨位大法，比如 1934 型驱逐舰上报的标准排水量为 1625 吨（实际上 Z1 试航时的标准排水量为 2259 吨）。</p>
+<p>二战爆发之时德国海军共有 21 艘驱逐舰（Z1—Z21）在役，在战争中又有 19 艘（Z22—Z39；Z43）陆续完工服役，有 5 艘（Z44—Z47；Z51）直到战争结束都没有完工服役，还有一批只存在于图纸上的船（纸上的纳粹海军.jpg）</p>
+<p>实际上，并不是所有的 Z 驱都是拥有名字的，Z1—Z22 都是以一战期间阵亡的海军将士的名字来命名，但是 Z22 以后 Z 驱便不再拥有名字，只用其序列号来称呼。</p>
+<h2 id="1934-型驱逐舰"><a href="#1934-型驱逐舰" class="headerlink" title="1934 型驱逐舰"></a>1934 型驱逐舰</h2><p><img src="https://api.champhoon.xyz/img/blog/azurlane-z/azurlane-z-1.webp" class="lazyload" data-srcset="https://api.champhoon.xyz/img/blog/azurlane-z/azurlane-z-1.webp" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p>是纳粹德国海军的第一型驱逐舰，又被称为 <strong>Z1 级</strong>或者<strong>莱伯勒希特·马斯级</strong>。1934 年至 1935 年开工建造，共四艘（Z1-Z4）。</p>
+<p>该型驱逐舰于 1932 年设计，当时的德国海军仍然处于《凡尔赛条约》的限制之下。1933 年，希特勒政府在日内瓦裁军会议上明确表明德国海军不会再遵守《凡尔赛条约》，随即准备重建海军。在设计时该型驱逐舰经历了大型鱼雷艇到驱逐舰的转变。1934 年初，新型驱逐舰开始建造。</p>
+<p>1934 型最亮眼的设备就是高压蒸汽锅炉和涡轮机，虽然六个高压蒸汽锅炉使得这些满载排水量高达 3100 吨的「小学生」可以达到 38 节的高速，但是高压蒸汽轮机的震动使得舰体的稳定性不佳，再加上燃烧效率的问题使得该型驱逐舰在续航方面仅有同时期英国驱逐舰的一半，不仅如此，甲板设计不良导致舰船重心不稳、遭遇恶劣气候前甲板的主炮即不可使用、建造成本高昂……可以说，她们的设计算不上成功，但是作为纳粹德国重建海军计划的第一批驱逐舰，她们的设计思路也为后续的 Z 驱提供了参考<psw>比如体重偏大</psw>。</p>
+<p>1934 型的武器包括：五座单装 127 毫米 SK C&#x2F;34 火炮、四座双联装 37 毫米 SK C&#x2F;30 手拉机枪<psw>永不卡壳</psw>、六座单装 20 毫米 MG C&#x2F;30 机枪、两座四联装 533 毫米鱼雷发射管、四个深水炸弹投掷器以及六个布雷轨。</p>
+<h3 id="Z-系先驱——Z1-莱伯勒希特·马斯"><a href="#Z-系先驱——Z1-莱伯勒希特·马斯" class="headerlink" title="Z 系先驱——Z1 莱伯勒希特·马斯"></a>Z 系先驱——Z1 莱伯勒希特·马斯</h3><p><img src="https://api.champhoon.xyz/img/blog/azurlane-z/azurlane-z-2.webp" class="lazyload" data-srcset="https://api.champhoon.xyz/img/blog/azurlane-z/azurlane-z-2.webp" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p>Z1，1934 年 7 月 7 日下令建造，同年 10 月 10 日下水，1935 年 8 月 15 日完工服役。舰名来自于在黑尔戈兰湾海战中丧生的海军准将莱伯勒希特·马斯。</p>
+<p>作为德国在一战后建造的第一艘第一代驱逐舰，一服役就担任了德国鱼雷艇部队司令部的旗舰（看着挺哈人的，实际上就是在搞一些训练、演戏之类的），1939 年护卫希特勒进入克莱佩达港「收回」梅梅尔地区。在波兰战役中与维彻尔号驱逐舰和格莱夫号布雷艇交火，因为被岸炮打中上层建筑受到轻伤被迫回国休整——这是她参加过的唯一一场海战。之后该舰就一直执行布设水雷、截击商船的任务。</p>
+<p>与她平淡的生涯相比，Z1 的结局反而有一些戏剧性：1940 年 2 月 22 日夜间，Z1 突然遭遇空袭，随后发生爆炸，断成两截。同行的 Z3 为了拯救落水的船员触雷沉没，舰上无人生还。后来经过调查，空袭乃是德国空军所为（友军之围），原因是空军不知道该水域有自家的军舰。但是 Z1 到底是被炸弹直接炸沉的还是为了躲避轰炸而驶入雷区触雷沉没就不得而知了。</p>
+<h3 id="潜水圣地——Z2-格奥尔格·蒂勒"><a href="#潜水圣地——Z2-格奥尔格·蒂勒" class="headerlink" title="潜水圣地——Z2 格奥尔格·蒂勒"></a>潜水圣地——Z2 格奥尔格·蒂勒</h3><p><img src="https://api.champhoon.xyz/img/blog/azurlane-z/azurlane-z-3.webp" class="lazyload" data-srcset="https://api.champhoon.xyz/img/blog/azurlane-z/azurlane-z-3.webp" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p>Z2，于 1934 年 7 月 7 日下令建造，同年 10 月 25 日下水，最终于 1937 年 2 月 27 日完工服役。其舰名来源于特塞尔海战（1914 年 10 月 7 日行动）中丧生的海军少校格奥尔格·蒂勒。</p>
+<p>Z2 生命的大部分都和 Z1 相似：搞搞演习，整一下训练，跟着舰队寻访各国，参与收回梅梅尔地区的行动等。二战初期先是被部署在波罗的海封锁波兰，随后回国改造。1940 年 4 月，Z2 被分到了第一驱逐舰分舰队，并且参与了威瑟演习，从此留在了异国他乡。</p>
+<p>在第二次纳尔维克战役中，第一驱逐舰分舰队面对火力远远超过己方的英国舰队毫无还手之力，10 艘驱逐舰全部损失。Z2 也在战斗中严重损毁，最终倾覆于罗姆巴克斯峡湾，至今她沉没的地方仍是纳尔维克最受欢迎的潜水地点之一。</p>
+<h2 id="1936-型驱逐舰"><a href="#1936-型驱逐舰" class="headerlink" title="1936 型驱逐舰"></a>1936 型驱逐舰</h2><p><img src="https://api.champhoon.xyz/img/blog/azurlane-z/azurlane-z-4.webp" class="lazyload" data-srcset="https://api.champhoon.xyz/img/blog/azurlane-z/azurlane-z-4.webp" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p>又名 <strong>Z17 级驱逐舰</strong>或者<strong>迪特尔·冯·勒德尔级驱逐舰</strong>，体重上显著加大（又胖了），标准排水量达到了 2400 吨。该级相较于早期 Z 驱有不少改进的地方：提升了引擎的稳定性和船体结构的，削减了上层建筑高度以及抬高舰艏以降低重心、采用大西洋舰艏以提升抗浪性等。除 Z20 以外，1936 型驱逐舰全部在纳尔维克战役中沉没。</p>
+<p>武器和动力系统与 1934 型并无大的差别。1939 年底，德国人为她们装上了水听器方便接收柏林的广播。</p>
+<h3 id="传递笑容——Z18-汉斯·吕德曼"><a href="#传递笑容——Z18-汉斯·吕德曼" class="headerlink" title="传递笑容——Z18 汉斯·吕德曼"></a>传递笑容——Z18 汉斯·吕德曼</h3><p><img src="https://api.champhoon.xyz/img/blog/azurlane-z/azurlane-z-5.webp" class="lazyload" data-srcset="https://api.champhoon.xyz/img/blog/azurlane-z/azurlane-z-5.webp" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p>Z18，1936 年 9 月 9 日下水，次年 12 月 1 日完工，1938 年 10 月 8 日服役。舰名来源于德国海军的一名工程师，他在一次锅炉房事故中为了拯救船员而丧生。</p>
+<p>和她的姐姐们一样，Z18 早期的任务就是布设水雷和访问各国等。1939 年 10 月 17 日，在君特·吕特晏斯的率领下，Z18 与 Z21、Z16、Z17、Z19、Z20 前往亨伯河口布设水雷并导致 7 艘英国船只触雷沉没，同年 12 月 13 日，她与 Z21、Z19、Z20 前往泰晤士河河口布设水雷并再次导致一艘英国驱逐舰和 13 艘商船触雷沉没。在第二次纳尔维克战役中，Z18 受损严重，被迫搁浅，随后被英军发射鱼雷击毁。</p>
+<h3 id="背道而驰——Z19-赫尔曼·库纳"><a href="#背道而驰——Z19-赫尔曼·库纳" class="headerlink" title="背道而驰——Z19 赫尔曼·库纳"></a>背道而驰——Z19 赫尔曼·库纳</h3><p><img src="https://api.champhoon.xyz/img/blog/azurlane-z/azurlane-z-6.webp" class="lazyload" data-srcset="https://api.champhoon.xyz/img/blog/azurlane-z/azurlane-z-6.webp" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p>Z19，1936 年 10 月 5 日下水，1939 年 1 月 12 日服役。舰名来源于泽布吕赫港袭击中与英军士兵搏斗身亡的一名水兵。</p>
+<p>在服役后不久，Z19 就参与了护送希特勒到克莱佩达港的任务，随后，Z19 与她的姐姐 Z18 一同前往挪威进行友好访问，然后她就因为船舵故障一头撞上了莫尔德峡湾的栈桥(是个迷糊的小学生)……除了此次故障之外，Z19 还因为锅炉故障缺席了 1939 年 12 月 17 日的布雷任务（怎么就你拉了跨）。英国人因为这些水雷损失了两艘驱逐舰及数十艘商船。在第二次纳尔维克战役中，随着舰队的弹药逐渐耗尽，德军意图撤退到位于南边的罗姆巴克斯峡湾伏击冒进的英舰，但是 Z19 搞错了信号跑到了北边的赫让斯峡湾<psw>不愧是你啊</psw>。船员们在彻底耗尽弹药后凿沉了她。</p>
+<h3 id="英国小学生不讲武德！——Z21-威廉·海德坎姆"><a href="#英国小学生不讲武德！——Z21-威廉·海德坎姆" class="headerlink" title="英国小学生不讲武德！——Z21 威廉·海德坎姆"></a>英国小学生不讲武德！——Z21 威廉·海德坎姆</h3><p><img src="https://api.champhoon.xyz/img/blog/azurlane-z/azurlane-z-7.webp" class="lazyload" data-srcset="https://api.champhoon.xyz/img/blog/azurlane-z/azurlane-z-7.webp" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p>Z21，1936 年 12 月 25 日下水，1939 年 6 月 20 日服役。其舰名来源于一位一战期间负责塞德利茨号战巡的泵的船员，他在多格尔沙洲海战中打开阀门阻止了舰船引擎爆炸，而自己严重烧伤。</p>
+<p>作为驱逐舰中比较晚服役的一艘，Z21 服役后便担任了鱼雷艇舰队的旗舰，并且和自家姐姐 Z20 卡尔·加尔斯特号驱逐舰一起在斯卡克拉格巡逻，也曾和上述的几个姐姐一起在英国沿海布雷。</p>
+<p>1940 年 4 月 10 日夜，Z21 在纳尔维克停泊时遭到了英国驱逐舰不讲武德的偷袭，来自勇敢号驱逐舰的鱼雷把她船尾的炮塔炸上了天，之后虽然经过抢救但是 Z21 还是难逃倾覆的命运。</p>
+<h3 id="硕果仅存——Z20-卡尔·加尔斯特-坚固"><a href="#硕果仅存——Z20-卡尔·加尔斯特-坚固" class="headerlink" title="硕果仅存——Z20 卡尔·加尔斯特 坚固"></a>硕果仅存——Z20 卡尔·加尔斯特 坚固</h3><p><img src="https://api.champhoon.xyz/img/blog/azurlane-z/azurlane-z-8.webp" class="lazyload" data-srcset="https://api.champhoon.xyz/img/blog/azurlane-z/azurlane-z-8.webp" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p>Z20，1937 年 9 月 17 日下水，1939 年 3 月 25 日服役。其舰名来源于一战期间 S22 号鱼雷艇的指挥官，他于 1916 年 3 月 21 日的行动中丧生。</p>
+<p>在服役后。Z20 前往位于挪威的翁达尔斯内斯市进行访问，战争爆发后，Z20 在斯卡克拉格巡逻，负责检查中立国的船只上有无违禁品。当然了，作为驱逐舰，布雷的工作肯定是必不可少的，Z20 和她的姐姐们一样，战争期间的大部分时间都在布设水雷，她参与了泰晤士河河口、亨伯河河口以及纽卡斯尔附近水域的布雷行动。在纳尔维克战役爆发时， Z20 和沙恩霍斯特等一同行动，因此逃过了一劫，成为了 1936 型驱逐舰最后的火种。</p>
+<p>纳尔维克战役后，德国海军对残存的驱逐舰进行了重组，Z20 也成为了新舰队的旗舰。随后，由她领导的护航编队与格奈森瑙号战列舰、沙恩霍斯特号战列舰等共同参与了代号为「朱诺」的行动，该行动计划通过攻击哈尔斯塔来缓解进攻纳尔维克的陆军的压力，但随着盟军的主动撤退，这支舰队的计划也转变为搜寻并摧毁盟军的运兵船。最终舰队在挪威海将包括皇家海军的光荣号航空母舰在内的一众船只击沉（这也是最后一艘被战列舰主炮击沉的航母）。</p>
+<p>德军占领挪威后，Z20 来到了法国布雷斯特市为进攻英国做准备，在此期间，Z20 又恢复作为驱逐舰的日常：搞搞训练、布设水雷、日常巡逻等。值得一提的是在此期间她同几艘驱逐舰一起主动抵近英国沿海袭击船只并取得了一定成果。1940 年 12 月 5 日，Z20 回到不来梅哈芬进行维护直到下一年的 6 月才完成。</p>
+<p>战争结束后，Z20 作为战争赔偿被交付给了苏联海军，在得到新名字「坚固」后她来到了波罗的海舰队继续服役。1954 年 11 月 28 日，坚固号驱逐舰又被更名为 PKZ-99 并作为部队的浮动营房。1956 年 6 月 25 日被除籍并被拆解。</p>
+<h2 id="1936A-型、1936B-型、1936C-型"><a href="#1936A-型、1936B-型、1936C-型" class="headerlink" title="1936A 型、1936B 型、1936C 型"></a>1936A 型、1936B 型、1936C 型</h2><p><img src="https://api.champhoon.xyz/img/blog/azurlane-z/azurlane-z-9.webp" class="lazyload" data-srcset="https://api.champhoon.xyz/img/blog/azurlane-z/azurlane-z-9.webp" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p><img src="https://api.champhoon.xyz/img/blog/azurlane-z/azurlane-z-10.gif" class="lazyload" data-srcset="https://api.champhoon.xyz/img/blog/azurlane-z/azurlane-z-10.gif" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p>1936 型驱逐舰设计完成并陆续投产建造后，德国人的下一步设计分两个方向进行：主要是在波罗的海等内海进行短程航行的轻量型舰艇，以及适应远洋航行和作战的大型驱逐（有一说为 1937 型）。但是新型驱逐舰的设计遇到了瓶颈，其糟糕的抗浪性以及低性价比不断遭受质疑。最终海军为了不浪费宝贵的时间，要求设计师们从相对比较成功的 1936 型驱逐舰上做改进，由此产生了后续的型号。</p>
+<p>1936A 型驱逐舰，也被称为 <strong>Z23 级</strong>或者<strong>纳尔维克级驱逐舰</strong>。全级包括后续的 1396A（Mob）级共 15 艘驱逐舰（Z23-Z39）。该级驱逐舰在设计上最引人注目的就是采用了 150mm 口径的舰炮（一门双联装置于舰艏，三门单装置于舰尾），这使得她们的火力相较于普通的驱逐舰（通常装备 120-127mm 口径的舰炮）有了较大提升。这也是游戏中 Z23 可以装备轻巡主炮的原因。如此设计当然是为了让这些排水量已经达到 3700 吨的「小学生」在对抗盟军驱逐舰时可以取得火力上的优势。 但是双联装炮塔也带来了重心不稳、抗浪能力不佳以及续航等等问题，因此在后续的 1936B 型和 1936C 型中又将舰炮的口径改回了 127mm 口径。</p>
+<p>1936B 型驱逐舰包括纳粹德国海军在 1941-1942 年设计并建造的五艘驱逐舰（Z35、Z36、Z43、Z44、Z45）。本来按照原定计划应该是有八艘驱逐舰投入生产的，但是随着陆上战事逐渐吃紧，有三艘战舰还未开工就已经被取消，Z44、Z45 则在自己尚未完工时就遭到了放弃。</p>
+<p>1936C 型驱逐舰是仍在设计中的驱逐舰，该型驱逐舰计划建造五艘但是实际上只有两艘（Z46、Z47）开工建造而且还因为原料不足以及盟军空袭等原因尚未完工就遭到了放弃。在设计上，该型驱逐舰相比之前的驱逐舰有了较大的改进：三门双联装 127mm 速射火炮按照前一后二的布局布置，安装了当时较为先进的火控系统，而且还增强了单舰的防空火力。</p>
+<h3 id="铁血先锋——Z23-豹"><a href="#铁血先锋——Z23-豹" class="headerlink" title="铁血先锋——Z23 豹"></a>铁血先锋——Z23 <del>豹</del></h3><p><img src="https://api.champhoon.xyz/img/blog/azurlane-z/azurlane-z-11.webp" class="lazyload" data-srcset="https://api.champhoon.xyz/img/blog/azurlane-z/azurlane-z-11.webp" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p>Z23，1939 年 12 月 15 日开工建造，1940 年 9 月 15 日服役。从 Z23 开始，后续的 Z 驱都不再拥有名字，后人一般用她们的舷号代称。</p>
+<p>每艘驱逐舰的早期服役经历都是相当相似的：在德军进攻挪威以及法国时，Z23 就主要负责布雷以及护卫商船以及海域巡逻。1941 年 6 月，Z23 被调往挪威海和巴伦支海一带截击盟军的补给船。1941 年 11 月底，Z23 被派遣到特罗姆瑟，驻守北欧期间也发生过一些小插曲：1941年12月11日，Z23 的雷达发现了英国皇家海军的冒险号和迅速号扫雷艇，但是由于浓雾以及浮冰的阻挡未能成功拦截。1942 年 1 月 20 日，Z23 在浓雾中航行时不慎撞上了 Z24 贴贴，这迫使 Z24 返回不来梅哈芬进行维修，而她自己则来到了特隆赫姆进行改装。</p>
+<p>1943 年 3 月， 第八驱逐舰分舰队被调至比斯开湾。在这里舰队开始负责带领轴心国的运输船突破盟军的封锁。从 3 月 28 日至 12 月 27 日，第八驱逐舰分舰队多次护送运输舰穿越盟军在比斯开湾设下的封锁线。但是在 28 日舰队再次护送一艘前往远东地区的意大利货船时被盟军发觉，当天中午舰队就遭到了进取号和格拉斯哥号轻巡的拦截，由于糟糕的海况，占有数量优势的德军舰队被两艘英舰打的四散奔逃。在战斗中 Z23 率先发现了敌人并且发射了鱼雷（但是无一命中），然后就和一艘鱼雷艇一路狂奔到圣让德吕兹。这也是二战期间德军最后一次尝试以水面舰艇突破盟军在大西洋设下的封锁线，史称「比斯开湾海战」<psw>Z23尽力了</psw>。</p>
+<p>1944 年 8 月 12 日，正当 Z23 结束了潜艇护卫任务停靠在拉罗切利时遭到了英军轰炸机的攻击并且遭受重创。德国海军很快就放弃了她并且于 8 月 20 日将其除籍。战争结束后法国海军把她打捞起来并把她作为其他仍在法国服役的前德国驱逐舰的配件来源。两年后 Z23，或者说豹（Leopard）号驱逐舰正式退役并被拆解。</p>
+<h3 id="一般驱逐舰——Z24"><a href="#一般驱逐舰——Z24" class="headerlink" title="一般驱逐舰——Z24"></a>一般驱逐舰——Z24</h3><p><img src="https://api.champhoon.xyz/img/blog/azurlane-z/azurlane-z-12.webp" class="lazyload" data-srcset="https://api.champhoon.xyz/img/blog/azurlane-z/azurlane-z-12.webp" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p>Z24，1939 年 1 月 2 日下水，次年 10 月 23 日完工服役。</p>
+<p>服役后，她的第一个任务就是护送往返于波罗的海和挪威的运输舰。随后又先后承担了吕佐夫号重型巡洋舰，沙恩霍斯特号战列舰以及希佩尔海军上将号重型巡洋舰的护送任务。1941 年 11 月底她和姐姐 Z23 抵达了特罗姆瑟，在哪里她们被分到了第八驱逐舰分舰队（又称纳尔维克支队)，在与 Z23 贴贴之后 Z24 便返回不来梅哈芬进行维修。</p>
+<p>维修完成后，Z24 护送希佩尔海军上将号重巡前往挪威海。十天以后，Z24 与 Z25、Z26 一同进入瓦朗厄尔峡湾攻击英国人的运输舰，在击沉了两艘运输舰后她们遭遇了特立尼达号巡洋舰和愤怒号驱逐舰并且爆发了战斗。英国人很快便重创了 Z26，但是为了躲避鱼雷她们不得不放弃对其他驱逐舰的追逐。</p>
+<p>死里逃生后，Z24 和 Z25，加上增援的 Z7 继续搜寻英国人的运输舰，在两次搜索无果后，她们等到了一个好消息： U456 号潜艇击伤了护卫 PQ-11 运输舰队的爱丁堡号轻巡，这三艘驱逐舰当即决定追击爱丁堡号。第二天下午她们遭遇了该运输舰队但是由于护航英舰的阻挠攻击未能取得成效。在后续的追击中她们击沉了爱丁堡号并且重创了两艘英国驱逐舰。1942 年 7 月，Z24 参与了跳马运输行动（不是抓铁托的那个），她和其他四艘驱逐舰负责护卫舍尔海军上将号重巡攻击 PQ-17 运输舰队，但是盟军在得知德国人出动了提尔皮茨号战列舰后果断放弃了运输船队，因此德军水面舰艇也逐一回港。顺带一提，没了军舰保护的运输舰队在狼群眼里就是羔羊，事后苏联方面虽然进行了积极的搜救，但是 PQ-17 运输舰队还是遭受了巨大损失——35 艘运输舰只有 11 艘最终抵达苏联的港口。7 月 12 号 Z24 回到基尔进行改装。</p>
+<p>1943 年 3 月，Z24 也随舰队来到了比斯开湾进行护航任务，在比斯开湾海战中由于能见度低下加之自己不是首舰的原因，Z24 并没有遭到英军的攻击也没有开火#Z24 状态。诺曼底登陆时，德国海军纠集了仅存的几艘驱逐舰和鱼雷艇主动出击企图阻挡盟军。然而盟军对此早有防备，双方最终在维桑岛爆发了战斗，Z24 遭受重创撤至波尔多进行修理。1944 年 8 月 24 日，Z24 遭遇盟军空袭并最终于波尔多的码头倾覆。她的船员上岸后坚持抵抗直到德国投降</p>
+<h3 id="海峡冲刺——Z25"><a href="#海峡冲刺——Z25" class="headerlink" title="海峡冲刺——Z25"></a>海峡冲刺——Z25</h3><p><img src="https://api.champhoon.xyz/img/blog/azurlane-z/azurlane-z-13.webp" class="lazyload" data-srcset="https://api.champhoon.xyz/img/blog/azurlane-z/azurlane-z-13.webp" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p>Z25，1940 年 3 月 16 日下水，同年 9 月 30 日完工服役。</p>
+<p>Z25 服役以后的第一件任务就是前往北欧护送提尔皮茨号战列舰，后者于当年 11 月前往奥兰海意图封锁苏联波罗的海舰队的出口。</p>
+<p>两个月后 Z25 来到特罗姆瑟并成为了第八驱逐舰分舰队的旗舰。1942 年 1 月 29 日，Z25 在荷兰与 Z7 会和，旋即快速穿越英吉利海峡，于 2 月 7 日抵达法国，然后在法国与欧根亲王号和舍尔海军上将号重巡会和，然后她们再次快速穿越英吉利海峡抵达特隆赫姆。德国舰队先是在北大西洋四处劫掠，然后又在英国人的眼皮子底下绕了英格兰半圈跑到波罗的海，期间带嘤的海军和空军居然被德国海军牵着鼻子走也属实是让笔者大开眼界<psw>几年不见这么拉了</psw>。</p>
+<p>3 月 28 日，Z25 一行遭遇英舰特立尼达号和愤怒号，英军在重创了 Z26 以后就对 Z25 开火，但是无一命中。趁着英军忙着躲避鱼雷，Z25 也得以逃出生天，并且也参与了追逐爱丁堡号的行动中。5 月 16 日，Z25 与 Z5 一起护送欧根亲王号从特隆赫姆前往基尔进行大修，Z25 也开始进行改装。</p>
+<p>后来 Z25 被分配到了第六驱逐舰分舰队。1944 年 2 月 18 日，Z25 抵达塔林，开始负责护送运输舰、布雷以及骚扰东岸的苏军。7月至11月，Z25都在忙着把人员从爱沙尼亚和拉脱维亚撤出来，顺便炮击一下苏军的阵地。11 月 4 日，Z25 被分配到第八驱逐舰分舰队负责炮击日渐抵近科尼斯堡（加里宁格勒）的苏军以帮助陆军争取撤退的时间。1945 年 5 月 10 日，Z25 退役。</p>
+<p>战后，Z25 被分给了法国，1946 年 2 月 4 日，她正式以「霍奇」的身份加入了法国海军。1947 年 3 月，她跟随黎塞留号战列舰访问北非和西非。1958 年 1 月 2 日，她被拍卖出售并最终于 1961 年报废。</p>
+<h3 id="AntiTorpedoField——Z26"><a href="#AntiTorpedoField——Z26" class="headerlink" title="AntiTorpedoField——Z26"></a>AntiTorpedoField——Z26</h3><p><img src="https://api.champhoon.xyz/img/blog/azurlane-z/azurlane-z-14.webp" class="lazyload" data-srcset="https://api.champhoon.xyz/img/blog/azurlane-z/azurlane-z-14.webp" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p>Z26，1940 年 4 月 2 日下水，次年 1 月 11 日完工服役。</p>
+<p>Z26 的大部分时间都在北欧的海域活动（是的，她也是第八驱逐舰分舰队的一员）但是她在服役期间也一直饱受故障的困扰，这使得她不得不于 1942 年初返回德国进行维修，维修完成后又一路辗转来到了席尔克内斯。</p>
+<p>3 月 28 日，第八驱逐舰队奉命前往瓦朗厄尔峡湾拦截 PQ-13 运输舰队，Z26 击沉了一艘运输舰。就在德国人忙着搜救生还者时她们被特立尼达号和愤怒号发现了，双方立刻开始交火，作为领舰的 Z26 理所当然的成为了英国人重点关注的对象，很快 Z26 的轮机损坏并且迷失在了暴风雪中，更加糟糕的是后面还有一艘带雷达的轻巡不断追击，怎么看 Z26 都是必死的局面。英国人也不愿意再浪费时间，特立尼达号朝Z26发射了一颗鱼雷想要结束这场追逐，但是巧的是由于各种走位以及洋流或者冰层的阻挡，<strong>这颗鱼雷最终打到了特立尼达号自己</strong>，看起来就好像是自己发射的鱼雷来了个一百八十度大转弯一样。不过虽然出了这样的乌龙事件，已经被打瘸的 Z26 也难以脱离盟军的追击了，最终彻底失去动力的 Z26 被鱼雷击沉。暴风雪散去后 Z24 和 Z25 又返回赶走了苏联人的驱逐舰并且救起了 88 名幸存者。</p>
+<h3 id="护航精英——Z28"><a href="#护航精英——Z28" class="headerlink" title="护航精英——Z28"></a>护航精英——Z28</h3><p><img src="https://api.champhoon.xyz/img/blog/azurlane-z/azurlane-z-15.webp" class="lazyload" data-srcset="https://api.champhoon.xyz/img/blog/azurlane-z/azurlane-z-15.webp" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p>Z28，1940 年 8 月 20 日下水，次年 8 月 19 日完工服役。</p>
+<p>在 1941 年至 1942 年期间，Z28 一直在丹麦的奥胡斯和斯卡格拉克海峡之间巡逻。四月，她和 Z30 被派往挪威。五月，她护送舍尔海军上将号重巡前往纳尔维克。Z28 也参与了跳马运输行动，她负责护卫的是舍尔海军上将号和吕佐夫号，当她们前往阿尔塔峡湾准备与友军会面时，吕佐夫和其他三艘驱逐舰不慎搁浅，再加上盟军的主动撤离，德军也就放弃了这一计划。而后 Z28 又参与了希佩尔海军上将、吕佐夫和提尔皮茨的护航任务，1942 年 10 月 24 日，她前往基尔进行改装。改装完成后她又继续护送各种船只，包括从 1944 年开始帮助疏散滞留在东欧地区的陆军，在爱沙尼亚和拉脱维亚地区炮击苏军等。1945 年 3 月 4 日，Z28 负责从波兰走廊撤走德军时遭到英军的轰炸，两枚炸弹正中她的中部，她很快就沉没了。</p>
+<h3 id="真善舞——Z35"><a href="#真善舞——Z35" class="headerlink" title="真善舞——Z35"></a>真善舞——Z35</h3><p><img src="https://api.champhoon.xyz/img/blog/azurlane-z/azurlane-z-16.webp" class="lazyload" data-srcset="https://api.champhoon.xyz/img/blog/azurlane-z/azurlane-z-16.webp" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p>Z35，1942 年 10 月 2 日下水，1943 年 9 月 22 日服役。</p>
+<p>1944 年 2 月，Z35 被分配到了第六驱逐舰分舰队，相较于第八驱逐舰分舰队驻扎在北欧是为了掐断英国和苏联的北方航线，第六舰队虽然也驻扎在北欧，但是她们的主要任务是通过布雷来限制波罗的海红海军、轰炸苏军的阵地以及帮助陆军撤退（毕竟 1944 年）。1944 年 12 月，已经成为舰队旗舰的 Z35 和 Z36、Z43 以及两艘大型鱼雷艇一起前往芬兰湾加固已有的雷区。11 日凌晨舰队出发，但是越来越糟的海况使得舰队的导航出了问题。偏航的舰队驶入了一片此前就已经布好的雷区，一枚水雷在 Z35 左舷初爆炸，直接将她的四号炮塔和轮机给炸坏了。半小时后，Z35 再次发生剧烈爆炸并且快速沉没。苏联人救出了舰上大约 70 人。</p>
+<h3 id="中二病也要被雷普——Z36"><a href="#中二病也要被雷普——Z36" class="headerlink" title="中二病也要被雷普——Z36"></a>中二病也要被雷普——Z36</h3><p><img src="https://api.champhoon.xyz/img/blog/azurlane-z/azurlane-z-17.webp" class="lazyload" data-srcset="https://api.champhoon.xyz/img/blog/azurlane-z/azurlane-z-17.webp" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p>Z36，1943 年 5 月 15 日下水，1944 年 2 月 19 日服役。</p>
+<p>她的人生？轨迹和 Z35 极其相似，都是在第六驱逐舰分舰队，都是执行布雷、帮助陆军撤退和轰炸苏军阵地。1944 年 12 月 11 日凌晨，舰队在糟糕的海况下偏航驶入了此前布下的雷区，Z36 撞上了一颗水雷并且快速沉没，舰上人员无一生还。</p>
+<h3 id="（被）铁翼陨灭——Z46"><a href="#（被）铁翼陨灭——Z46" class="headerlink" title="（被）铁翼陨灭——Z46"></a>（被）铁翼陨灭——Z46</h3><p><img src="https://api.champhoon.xyz/img/blog/azurlane-z/azurlane-z-18.webp" class="lazyload" data-srcset="https://api.champhoon.xyz/img/blog/azurlane-z/azurlane-z-18.webp" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p>随着战争的节节失利，德国不可能也无力再将资源划拨给海军了。很多已经准备完工的或者半完工的舰船不得不停止建造或者就地拆解，德国海军野心满满的「Plan-Z」最后也不过是讨好好大喜功的希特勒工具和后人脑补（魔法）压根不存在的公海舰队 2.0 的素材罢了。Z46 是 1936C 型舰的首舰，但是实际上只有她和 Z47 开始建造，并且她们最终都因为盟军的空袭而被放弃了。</p>
+
+  </div>
+  
+  
+    
+    <div class='footer'>
+       <!-- 参考资料、相关资料等 -->
+      
+       <!-- 相关文章 -->
+      
+      <!-- 版权声明组件 -->
+      
+      <!-- 打赏组件 -->
+      
+    </div>
+  
+  
+    
+
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2025-03-05T14:42:27+00:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2025年3月5日</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+  
+  
+  
+  <div class='new-meta-item category'>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/essay/">ティータイム学会</a>
+    
+      <span hidden itemprop="about" itemscope itemtype="https://schema.org.cn/Thing">
+        <a href="/categories/essay/" itemprop="url"><span itemprop="name">ティータイム学会</span></a>
+      </span>
+    
+  </div>
+  
+
+
+
+        
+      
+        
+          
+  
+  
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/ACGN/" rel="nofollow"><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><p>ACGN</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E7%A2%A7%E8%93%9D%E8%88%AA%E7%BA%BF/" rel="nofollow"><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><p>碧蓝航线</p></a></div>
+  <span hidden itemprop="keywords">ACGN 碧蓝航线</span>
+  
+
+
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+        <a class='prev' href='/essay/castle-doctrine/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>非法侵入住宅罪之浅究</p>
+          <p class='content'>封面来源：老威廉·皮特像
+
+引言1763 年，在英国首相老威廉·皮特的演讲《论英国人个人居家安全的权利》当中有这样一句话：「我的破草屋，风能进，雨能进，国王不能进。」到了现代社会，公民住宅作为私...</p>
+        </a>
+      
+      
+        <a class='next' href='/log/20/'>
+          <p class='title'>贰拾<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>封面来源：卡尔·萨根像
+
+
+在下曾和一名朋友介绍过，在下最喜欢的照片叫做《暗淡蓝点》Pale Blue Dot，它是 1990 年 2 月 14 日，由飞越了冥王星轨道的旅行者 1 号，在距离地...</p>
+        </a>
+      
+    </div>
+  
+  <!-- 文章推荐 -->
+  
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
+
+  
+
+
+  <article class="post white-box shadow" id="comments">
+    <span hidden>
+      <meta itemprop="discussionUrl" content="/essay/azurlane-z/index.html#comments">
+    </span>
+    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
+    
+
+    <div id="layoutHelper-comments"></div>
+
+  </article>
+
+
+
+
+
+
+</div>
+<aside id='l_side' itemscope itemtype="https://schema.org.cn/WPSideBar">
+  
+
+  
+    
+    
+      
+    
+  
+
+  
+    
+    
+      
+  
+  <section class="widget category desktop mobile">
+    
+  <header>
+    
+      <a href='/categories/'><i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
+    
+  </header>
+
+
+    <div class='content'>
+      <ul class="entry navigation">
+        
+          <li><a class="flat-box"
+            title="/categories/essay/" href="/categories/essay/"
+            active-action="action-categoriesessay"
+            ><div class='name'>ティータイム学会</div><div class='badge'>(13)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/log/" href="/categories/log/"
+            active-action="action-categorieslog"
+            ><div class='name'>人生再開記録課</div><div class='badge'>(32)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/note/" href="/categories/note/"
+            active-action="action-categoriesnote"
+            ><div class='name'>偽技術開発日常</div><div class='badge'>(25)</div></a></li>
+        
+          <li><a class="flat-box"
+            title="/categories/pho/" href="/categories/pho/"
+            active-action="action-categoriespho"
+            ><div class='name'>ニコニコ写真館</div><div class='badge'>(11)</div></a></li>
+        
+      </ul>
+    </div>
+  </section>
+
+
+    
+  
+
+
+<div class="widget-sticky">
+
+  
+  
+
+
+<section class="widget toc-wrapper desktop mobile" id="toc-div" >
+  
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>目录</span>
+    
+  </header>
+
+
+  <div class='content'>
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1934-%E5%9E%8B%E9%A9%B1%E9%80%90%E8%88%B0"><span class="toc-text">1934 型驱逐舰</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Z-%E7%B3%BB%E5%85%88%E9%A9%B1%E2%80%94%E2%80%94Z1-%E8%8E%B1%E4%BC%AF%E5%8B%92%E5%B8%8C%E7%89%B9%C2%B7%E9%A9%AC%E6%96%AF"><span class="toc-text">Z 系先驱——Z1 莱伯勒希特·马斯</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%BD%9C%E6%B0%B4%E5%9C%A3%E5%9C%B0%E2%80%94%E2%80%94Z2-%E6%A0%BC%E5%A5%A5%E5%B0%94%E6%A0%BC%C2%B7%E8%92%82%E5%8B%92"><span class="toc-text">潜水圣地——Z2 格奥尔格·蒂勒</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1936-%E5%9E%8B%E9%A9%B1%E9%80%90%E8%88%B0"><span class="toc-text">1936 型驱逐舰</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BC%A0%E9%80%92%E7%AC%91%E5%AE%B9%E2%80%94%E2%80%94Z18-%E6%B1%89%E6%96%AF%C2%B7%E5%90%95%E5%BE%B7%E6%9B%BC"><span class="toc-text">传递笑容——Z18 汉斯·吕德曼</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%83%8C%E9%81%93%E8%80%8C%E9%A9%B0%E2%80%94%E2%80%94Z19-%E8%B5%AB%E5%B0%94%E6%9B%BC%C2%B7%E5%BA%93%E7%BA%B3"><span class="toc-text">背道而驰——Z19 赫尔曼·库纳</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%8B%B1%E5%9B%BD%E5%B0%8F%E5%AD%A6%E7%94%9F%E4%B8%8D%E8%AE%B2%E6%AD%A6%E5%BE%B7%EF%BC%81%E2%80%94%E2%80%94Z21-%E5%A8%81%E5%BB%89%C2%B7%E6%B5%B7%E5%BE%B7%E5%9D%8E%E5%A7%86"><span class="toc-text">英国小学生不讲武德！——Z21 威廉·海德坎姆</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A1%95%E6%9E%9C%E4%BB%85%E5%AD%98%E2%80%94%E2%80%94Z20-%E5%8D%A1%E5%B0%94%C2%B7%E5%8A%A0%E5%B0%94%E6%96%AF%E7%89%B9-%E5%9D%9A%E5%9B%BA"><span class="toc-text">硕果仅存——Z20 卡尔·加尔斯特 坚固</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1936A-%E5%9E%8B%E3%80%811936B-%E5%9E%8B%E3%80%811936C-%E5%9E%8B"><span class="toc-text">1936A 型、1936B 型、1936C 型</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%93%81%E8%A1%80%E5%85%88%E9%94%8B%E2%80%94%E2%80%94Z23-%E8%B1%B9"><span class="toc-text">铁血先锋——Z23 豹</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E8%88%AC%E9%A9%B1%E9%80%90%E8%88%B0%E2%80%94%E2%80%94Z24"><span class="toc-text">一般驱逐舰——Z24</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B5%B7%E5%B3%A1%E5%86%B2%E5%88%BA%E2%80%94%E2%80%94Z25"><span class="toc-text">海峡冲刺——Z25</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#AntiTorpedoField%E2%80%94%E2%80%94Z26"><span class="toc-text">AntiTorpedoField——Z26</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8A%A4%E8%88%AA%E7%B2%BE%E8%8B%B1%E2%80%94%E2%80%94Z28"><span class="toc-text">护航精英——Z28</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9C%9F%E5%96%84%E8%88%9E%E2%80%94%E2%80%94Z35"><span class="toc-text">真善舞——Z35</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%AD%E4%BA%8C%E7%97%85%E4%B9%9F%E8%A6%81%E8%A2%AB%E9%9B%B7%E6%99%AE%E2%80%94%E2%80%94Z36"><span class="toc-text">中二病也要被雷普——Z36</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%88%E8%A2%AB%EF%BC%89%E9%93%81%E7%BF%BC%E9%99%A8%E7%81%AD%E2%80%94%E2%80%94Z46"><span class="toc-text">（被）铁翼陨灭——Z46</span></a></li></ol></li></ol>
+  </div>
+</section>
+
+  
+
+</div>
+
+  <!-- Custom Files side begin -->
+  
+  <!-- Custom Files side end -->
+</aside>
+
+
+
+        </div>
+        
+  
+  <footer class="footer clearfix"  itemscope itemtype="https://schema.org.cn/WPFooter">
+    <br><br>
+    
+      
+        <div class='copyright'>
+        <p><img src="https://count.champhoon.xyz/blog?theme=moebooru&length=auto" /><br><br>Copyright © 2020 - 2025 <a href="https://champhoon.xyz/">澄沨的漫游茶记</a><br>Powered by <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/">Hexo</a> 🍵 Theme <a target="_blank" rel="noopener" href="https://github.com/volantis-x/hexo-theme-volantis/">Volantis</a></p>
+
+        </div>
+      
+    
+    <!-- Custom Files footer begin-->
+    
+    <!-- Custom Files footer end-->
+  </footer>
+
+
+        <a id="s-top" class="fa-solid fa-arrow-up fa-fw" title="top"></a>
+      </div>
+    </div>
+    <div>
+      <script>
+  /******************** volantis.dom ********************************/
+  // 页面选择器 将dom对象缓存起来 see: /source/js/app.js etc.
+  volantis.dom.bodyAnchor = volantis.dom.$(document.getElementById("safearea")); // 页面主体
+  volantis.dom.topBtn = volantis.dom.$(document.getElementById('s-top')); // 向上
+  volantis.dom.wrapper = volantis.dom.$(document.getElementById('wrapper')); // 整个导航栏
+  volantis.dom.coverAnchor = volantis.dom.$(document.querySelector('#l_cover .cover-wrapper')); // 1个
+  volantis.dom.switcher = volantis.dom.$(document.querySelector('#l_header .switcher .s-search')); // 搜索按钮   移动端 1个
+  volantis.dom.header = volantis.dom.$(document.getElementById('l_header')); // 移动端导航栏
+  volantis.dom.search = volantis.dom.$(document.querySelector('#l_header .m_search')); // 搜索框 桌面端 移动端 1个
+  volantis.dom.mPhoneList = volantis.dom.$(document.querySelectorAll('#l_header .m-phone .list-v')); //  手机端 子菜单 多个
+</script>
+
+<script>
+  
+  volantis.css("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css");
+  
+  
+  volantis.css("https://unpkg.com/font-awesome-animation@1.1.1/css/font-awesome-animation.min.css");
+  
+  
+  volantis.css("https://cdnjs.cloudflare.com/ajax/libs/node-waves/0.7.6/waves.min.css");
+  
+</script>
+
+<!-- required -->
+
+
+<!-- internal -->
+
+<script src="/js/app.js"></script>
+
+
+
+
+<!-- rightmenu要在darkmode之前（ToggleButton） darkmode要在comments之前（volantis.dark.push）-->
+
+  <script>
+const rootElement = document.documentElement;
+const darkModeStorageKey = "color-scheme";
+const rootElementDarkModeAttributeName = "color-scheme";
+const setLS = (k, v) => {
+    localStorage.setItem(k, v);
+};
+const removeLS = (k) => {
+    localStorage.removeItem(k);
+};
+const getLS = (k) => {
+    return localStorage.getItem(k);
+};
+const getModeFromCSSMediaQuery = () => {
+  return window.matchMedia("(prefers-color-scheme: dark)").matches
+    ? "dark"
+    : "light";
+};
+const resetRootDarkModeAttributeAndLS = () => {
+  rootElement.removeAttribute(rootElementDarkModeAttributeName);
+  removeLS(darkModeStorageKey);
+};
+const validColorModeKeys = {
+  dark: true,
+  light: true,
+};
+const applyCustomDarkModeSettings = (mode) => {
+  const currentSetting = mode || getLS(darkModeStorageKey);
+  getCustomDarkMode();
+  if (currentSetting === getModeFromCSSMediaQuery()) {
+    resetRootDarkModeAttributeAndLS();
+  } else if (validColorModeKeys[currentSetting]) {
+    rootElement.setAttribute(rootElementDarkModeAttributeName, currentSetting);
+  } else {
+    resetRootDarkModeAttributeAndLS();
+  }
+};
+const invertDarkModeObj = {
+  dark: "light",
+  light: "dark",
+};
+/**
+ * get target mode
+ */
+ const getCustomDarkMode = () => {
+  let currentSetting = getLS(darkModeStorageKey);
+  if (validColorModeKeys[currentSetting]) {
+    currentSetting = invertDarkModeObj[currentSetting];
+  } else if (currentSetting === null) {
+    currentSetting = invertDarkModeObj[getModeFromCSSMediaQuery()];
+  } else {
+    return;
+  }
+  if(currentSetting=="dark"){
+    volantis.dark.mode="light";
+  }else{
+    volantis.dark.mode="dark";
+  }
+  // console.log(volantis.dark.mode)
+};
+const toggleCustomDarkMode = () => {
+  let currentSetting = getLS(darkModeStorageKey);
+  if (validColorModeKeys[currentSetting]) {
+    currentSetting = invertDarkModeObj[currentSetting];
+  } else if (currentSetting === null) {
+    currentSetting = invertDarkModeObj[getModeFromCSSMediaQuery()];
+  } else {
+    return;
+  }
+  setLS(darkModeStorageKey, currentSetting);
+  return currentSetting;
+};
+/**
+ * 暗黑模式触发器
+ */
+volantis.dark.toggle=()=>{
+  const mode = toggleCustomDarkMode();
+  applyCustomDarkModeSettings(mode);
+  // 使用 volantis.dark.push 方法传入volantis.dark.toggle回调函数 参见layout/_partial/scripts/global.ejs
+  volantis.dark.method.toggle.start();
+}
+/**
+ * bind event for toggle button
+ */
+
+function bindToggleButton() {
+  var btn= document.querySelectorAll("#wrapper .toggle-mode-btn,#rightmenu-wrapper .toggle-mode-btn")
+  btn.forEach(function (e) {
+    volantis.dom.$(e).on('click',volantis.dark.toggle);
+  })
+}
+applyCustomDarkModeSettings();
+document.addEventListener("DOMContentLoaded", ()=>{
+  volantis.requestAnimationFrame(bindToggleButton)
+});
+
+const darkModelListeners={
+  dark:(mediaQueryList )=>{
+    if(mediaQueryList.matches){
+      volantis.dark.mode = "dark";
+    }
+    volantis.dark.method.toggle.start();
+  },
+  light:(mediaQueryList)=>{
+    if(mediaQueryList.matches){
+      volantis.dark.mode = "light";
+    }
+    volantis.dark.method.toggle.start();
+  }
+}
+window.matchMedia('(prefers-color-scheme: dark)').addListener(darkModelListeners.dark)
+window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListeners.light)
+</script>
+
+
+
+
+<script>
+  function loadIssuesJS() {
+    
+      const sites_api = document.getElementById('sites-api');
+      if (sites_api != undefined && typeof SitesJS === 'undefined') {
+        volantis.js("/js/plugins/tags/sites.js")
+      }
+    
+    
+      const friends_api = document.getElementById('friends-api');
+      if (friends_api != undefined && typeof FriendsJS === 'undefined') {
+        volantis.js("/js/plugins/tags/friends.js")
+      }
+    
+    
+      const contributors_api = document.getElementById('contributors-api');
+      if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
+        volantis.js("/js/plugins/tags/contributors.js")
+      }
+    
+  };
+  loadIssuesJS()
+</script>
+
+
+
+
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/19.1.3/lazyload.min.js"></script>
+<script>
+  // https://www.npmjs.com/package/vanilla-lazyload
+  // Set the options globally
+  // to make LazyLoad self-initialize
+  window.lazyLoadOptions = {
+    elements_selector: ".lazyload",
+    threshold: 0
+  };
+  // Listen to the initialization event
+  // and get the instance of LazyLoad
+  window.addEventListener(
+    "LazyLoad::Initialized",
+    function (event) {
+      window.lazyLoadInstance = event.detail.instance;
+    },
+    false
+  );
+  document.addEventListener('DOMContentLoaded', function () {
+    lazyLoadInstance.update();
+  });
+</script>
+
+
+
+
+  
+
+<script>
+  window.FPConfig = {
+	delay: 0,
+	ignoreKeywords: ["#"],
+	maxRPS: 6,
+	hoverDelay: 0
+  };
+</script>
+<script defer src="https://unpkg.com/volantis-static@0.0.1660614606622/libs/flying-pages/flying-pages.min.js"></script>
+
+
+
+
+
+   <script type="text/javascript">
+  function p_scrollrebeal() {
+    ScrollReveal().reveal("#l_main .reveal", {
+      distance: "32px",
+      duration: "800",
+      interval: "20",
+      scale: "1",
+      easing: "ease-out",
+    });
+  }
+  function init_scrollrebeal() {
+    if (typeof ScrollReveal == "undefined") {
+      volantis.requestAnimationFrame(init_scrollrebeal);
+    } else {
+      p_scrollrebeal();
+    }
+  }
+  volantis.js("https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js");
+  document.addEventListener("DOMContentLoaded", init_scrollrebeal)
+</script>
+
+
+
+
+
+
+      <script>
+  volantis.layoutHelper("comments",`<div id="twikoo_container"><i class="fa-solid fa-cog fa-spin fa-fw fa-2x"></i></div>`)
+  function load_twikoo() {
+    if(!document.querySelectorAll("#twikoo_container")[0])return;
+    volantis.js("/js/plugins/twikoo.min.js", p_twikoo)
+  }
+  function p_twikoo() {
+    if(!document.querySelectorAll("#twikoo_container")[0])return;
+    let path = pdata.commentPath;
+    let placeholder = pdata.commentPlaceholder || "" || "";
+    if (path.length == 0) {
+      let defaultPath = '';
+      path = defaultPath || decodeURI(window.location.pathname);
+    }
+    twikoo.init(Object.assign(Object.assign({"path":null,"envId":"https://comment.champhoon.xyz/","placeholder":null,"visitor":true}, {
+      el: '#twikoo_container',
+      path: path,
+      placeholder: placeholder,
+      onCommentLoaded: function() {
+        const fancyBoxInstance = new VolantisFancyBox();
+        fancyBoxInstance.groupBind('.tk-content img:not([class*="emo"])', 'Comments');
+      }
+    }),pdata.commentConfig))
+  }
+  load_twikoo();
+</script>
+
+    
+
+
+
+
+
+<!-- optional -->
+
+  <script>
+  async function loadSearchScript() {
+    
+        
+    
+    return volantis.js("/js/search/hexo.js");
+  }
+
+  function loadSearchService() {
+    loadSearchScript();
+    document.querySelectorAll(".input.u-search-input").forEach((e) => {
+      e.removeEventListener("focus", loadSearchService, false);
+    });
+
+    document.querySelectorAll(".u-search-form").forEach((e) => {
+      e.addEventListener("submit", (event) => {
+        event.preventDefault();
+      }, false);
+    });
+  }
+
+  // 打开并搜索 字符串 s
+  function OpenSearch(s) {
+    if (typeof SearchService === 'undefined')
+      loadSearchScript().then(() => {
+        SearchService.setQueryText(s);
+        SearchService.search();
+      });
+    else {
+      SearchService.setQueryText(s);
+      SearchService.search();
+    }
+  }
+
+  // 访问含有 ?s=xxx  的链接时打开搜索 // 与搜索引擎 structured data 相关: /scripts/helpers/structured-data/lib/config.js
+  if (window.location.search && /^\?s=/g.test(window.location.search)) {
+    let queryText = decodeURI(window.location.search)
+      .replace(/\ /g, "-")
+      .replace(/^\?s=/g, "");
+    OpenSearch(queryText);
+  }
+
+  // 搜索输入框获取焦点时加载搜索
+  document.querySelectorAll(".input.u-search-input").forEach((e) => {
+    e.addEventListener("focus", loadSearchService, false);
+  });
+</script>
+
+
+
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/node-waves/0.7.6/waves.min.js"></script>
+
+<script type="text/javascript">
+document.addEventListener("DOMContentLoaded", function () {
+  Waves.attach('.flat-btn', ['waves-button']);
+  Waves.attach('.float-btn', ['waves-button', 'waves-float']);
+  Waves.attach('.float-btn-light', ['waves-button', 'waves-float', 'waves-light']);
+  Waves.attach('.flat-box', ['waves-block']);
+  Waves.attach('.float-box', ['waves-block', 'waves-float']);
+  Waves.attach('.waves-image');
+  Waves.init();
+});
+</script>
+
+
+
+  
+<script src="https://unpkg.com/volantis-static@0.0.1660614606622/libs/comment_typing/comment_typing.js"></script>
+
+
+
+
+  <script>
+
+
+
+  function p_highlightjs_copyCode(){
+    if (!(document.querySelector(".highlight .code pre") ||
+      document.querySelector(".article pre code"))) {
+      return;
+    }
+    VolantisApp.utilCopyCode(".highlight .code pre, .article pre code")
+  }
+  volantis.requestAnimationFrame(p_highlightjs_copyCode)
+
+</script>
+
+
+
+
+
+
+
+
+
+
+  <script>
+  function load_swiper() {
+    if (!document.querySelectorAll(".swiper-container")[0]) return;
+    volantis.css("https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.1.14/swiper-bundle.min.css");
+    volantis.js("https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.1.14/swiper-bundle.min.js").then(() => {
+      p_swiper();
+    });
+  }
+
+  load_swiper();
+
+  function p_swiper() {
+    volantis.swiper = new Swiper('.swiper-container', {
+      slidesPerView: 'auto',
+      spaceBetween: 8,
+      centeredSlides: true,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  }
+
+</script>
+
+
+
+  <script>
+  volantis.css("https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/themes/white/pace-theme-minimal.min.css");
+  volantis.js("https://cdnjs.cloudflare.com/ajax/libs/pace/1.2.4/pace.min.js").then(() => {
+    Pace.options.restartOnPushState = false;
+    // 阅读进度
+    volantis.scroll.push(() => {
+      Pace.stop();
+      Pace.trigger('start');
+      Pace.bar.update(volantis.scroll.progress() * 100);
+      document.body.className = document.body.className.replaceAll("pace-running ","");
+    },"阅读进度")
+    // todo：配置项开关, 哪些页面添加阅读进度
+  })
+</script>
+
+
+
+
+<script>
+  function listenSidebarTOC() {
+    const navItems = document.querySelectorAll(".toc li");
+    if (!navItems.length) return;
+    const targets = []
+    const sections = Array.from(navItems).forEach((element) => {
+      const link = element.querySelector(".toc-link");
+      const target = document.getElementById(
+        link.getAttribute("href") ? decodeURI(link.getAttribute("href")).replace("#", "") : link.getAttribute("toc-action").split("toc-")[1] // 兼容 hexo-blog-encrypt
+      );
+      targets.push(target)
+      // 解除 a 标签 href 的 锚点定位, a 标签 href 的 锚点定位 会随机启用?? 产生错位???
+      if (link.getAttribute("href")) {
+        link.setAttribute("toc-action", "toc-" + decodeURI(link.getAttribute("href")).replace("#", ""))
+        link.removeAttribute("href")
+      }
+      // 配置 点击 触发新的锚点定位
+      if (target && target.id) {
+        link.addEventListener("click", (event) => {
+          event.preventDefault();
+          // 这里的 addTop 是通过错位使得 toc 自动展开.
+          volantis.scroll.to(target, { addTop: 5, observer: true })
+          // Anchor id
+          history.pushState(null, document.title, "#" + target.id);
+        });
+      }
+      return target;
+    });
+
+    function activateNavByIndex(target) {
+      if (target.classList.contains("active-current")) return;
+
+      document.querySelectorAll(".toc .active").forEach((element) => {
+        element.classList.remove("active", "active-current");
+      });
+      target.classList.add("active", "active-current");
+      let parent = target.parentNode;
+      while (!parent.matches(".toc")) {
+        if (parent.matches("li")) parent.classList.add("active");
+        parent = parent.parentNode;
+      }
+    }
+
+    // 方案一：
+    volantis.activateNavIndex = 0
+    activateNavByIndex(navItems[volantis.activateNavIndex])
+    if (targets[0]) {
+      volantis.scroll.push(() => {
+        if (targets[0].getBoundingClientRect().top >= 0) {
+          volantis.activateNavIndex = 0
+        } else if (targets[targets.length - 1].getBoundingClientRect().top < 0) {
+          volantis.activateNavIndex = targets.length - 1
+        } else {
+          for (let index = 0; index < targets.length; index++) {
+            const target0 = targets[index];
+            const target1 = targets[(index + 1) % targets.length];
+            if (target0.getBoundingClientRect().top < 0 && target1.getBoundingClientRect().top >= 0) {
+              volantis.activateNavIndex = index
+              break;
+            }
+          }
+        }
+        activateNavByIndex(navItems[volantis.activateNavIndex])
+      })
+    }
+
+    // 方案二：
+    // IntersectionObserver 不是完美精确到像素级别 也不是低延时性的
+    // function findIndex(entries) {
+    //   let index = 0;
+    //   let entry = entries[index];
+    //   if (entry.boundingClientRect.top > 0) {
+    //     index = sections.indexOf(entry.target);
+    //     return index === 0 ? 0 : index - 1;
+    //   }
+    //   for (; index < entries.length; index++) {
+    //     if (entries[index].boundingClientRect.top <= 0) {
+    //       entry = entries[index];
+    //     } else {
+    //       return sections.indexOf(entry.target);
+    //     }
+    //   }
+    //   return sections.indexOf(entry.target);
+    // }
+    // function createIntersectionObserver(marginTop) {
+    //   marginTop = Math.floor(marginTop + 10000);
+    //   let intersectionObserver = new IntersectionObserver(
+    //     (entries, observe) => {
+    //       let scrollHeight = document.documentElement.scrollHeight;
+    //       if (scrollHeight > marginTop) {
+    //         observe.disconnect();
+    //         createIntersectionObserver(scrollHeight);
+    //         return;
+    //       }
+    //       let index = findIndex(entries);
+    //       activateNavByIndex(navItems[index]);
+    //     }, {
+    //       rootMargin: marginTop + "px 0px -100% 0px",
+    //       threshold: 0,
+    //     }
+    //   );
+    //   sections.forEach((element) => {
+    //     element && intersectionObserver.observe(element);
+    //   });
+    // }
+    // createIntersectionObserver(document.documentElement.scrollHeight);
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    volantis.requestAnimationFrame(listenSidebarTOC)
+  });
+</script>
+
+
+
+
+
+<script>
+  document.onreadystatechange = function () {
+    if (document.readyState == 'complete') {
+      // 页面加载完毕 样式加载失败，或是当前网速慢，或是开启了省流模式
+      const { saveData, effectiveType } = navigator.connection || navigator.mozConnection || navigator.webkitConnection || {}
+      if (getComputedStyle(document.querySelector("#safearea"), null)["display"] == "none" || saveData || /2g/.test(effectiveType)) {
+        document.querySelectorAll(".reveal").forEach(function (e) {
+          e.style["opacity"] = "1";
+        });
+        document.querySelector("#safearea").style["display"] = "block";
+      }
+    }
+  }
+</script>
+
+
+  <script type="application/ld+json">[{"@context":"https://schema.org.cn","@type":"Organization","name":"澄沨的漫游茶记","url":"https://champhoon.xyz/","logo":{"@type":"ImageObject","url":"https://api.champhoon.xyz/favicon/favicon-main.png","width":64,"height":64}},{"@context":"https://schema.org.cn","@type":"Person","name":"澄沨","image":{"@type":"ImageObject","url":"https://api.champhoon.xyz/favicon/favicon-main.png"},"url":"https://champhoon.xyz/","sameAs":["https://github.com/aquausora/","https://t.me/aquausora"],"description":"Stay hungry, Stay foolish."},{"@context":"https://schema.org.cn","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://champhoon.xyz/","name":"澄沨的漫游茶记"}},{"@type":"ListItem","position":2,"item":{"@id":"https://champhoon.xyz/categories/essay/","name":"ティータイム学会"}},{"@type":"ListItem","position":3,"item":{"@id":"https://champhoon.xyz/essay/azurlane-z/","name":"碧蓝航线舰娘原型考据「铁血驱逐篇」"}}]},{"@context":"https://schema.org.cn","@type":"WebSite","name":"澄沨的漫游茶记","url":"https://champhoon.xyz/","keywords":"澄沨的漫游茶记,澄沨,博客,Blog","description":"Stay hungry, Stay foolish.","author":{"@type":"Person","name":"澄沨","image":{"@type":"ImageObject","url":"https://api.champhoon.xyz/favicon/favicon-main.png"},"url":"https://champhoon.xyz/","description":"Stay hungry, Stay foolish."},"publisher":{"@type":"Organization","name":"澄沨的漫游茶记","url":"https://champhoon.xyz/","logo":{"@type":"ImageObject","url":"https://api.champhoon.xyz/favicon/favicon-main.png","width":64,"height":64}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://champhoon.xyz?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"https://schema.org.cn","@type":"BlogPosting","headline":"碧蓝航线舰娘原型考据「铁血驱逐篇」","description":"此文章由铁血幼儿园指挥官、Z23/46 激推、一篇文章写了一年的我不是二刺螈さん荣誉撰稿。","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://champhoon.xyz/essay/azurlane-z/"},"author":{"@type":"Person","name":"澄沨","image":{"@type":"ImageObject","url":"https://api.champhoon.xyz/favicon/favicon-main.png"},"url":"https://champhoon.xyz/"},"publisher":{"@type":"Organization","name":"澄沨的漫游茶记","logo":{"@type":"ImageObject","url":"https://api.champhoon.xyz/favicon/favicon-main.png","width":64,"height":64}},"url":"https://champhoon.xyz/essay/azurlane-z/","wordCount":45,"datePublished":"2021-11-25T13:40:30.000Z","dateModified":"2025-03-05T14:42:27.220Z","articleSection":"ティータイム学会","keywords":"ACGN,碧蓝航线","image":{"@type":"ImageObject","url":"https://api.champhoon.xyz/img/blog/azurlane-z/azurlane-z.webp","width":1024,"height":768}}]</script>
+
+
+
+
+    </div>
+    <!-- import body_end begin-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@200;300;400;500;600;700;900&family=Lobster&family=Zhi+Mang+Xing&family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <!-- import body_end end-->
+    <!-- Custom Files bodyEnd begin-->
+    
+    <!-- Custom Files bodyEnd end-->
+  </body>
+</html>
